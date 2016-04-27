@@ -25,6 +25,9 @@ module clock(
         input btnC,
         input btnL,
         input btnR,
+        output [7:0] JA,
+        output [7:0] JB,
+        output [7:0] JC,
         output [3:0] an,
         output [6:0] seg,
         output dp
@@ -35,6 +38,11 @@ module clock(
     
     wire [7:0] hour;
     wire [7:0] minute;
+    
+    //Pmod port pins
+    wire [7:0] ja_pins;
+    wire [7:0] jb_pins;
+    wire [7:0] jc_pins;
          
     //segment displays
     // 4 3 : 2 1
@@ -52,4 +60,6 @@ module clock(
     bcd bin2digit(hour, minute, an4, an3, an2, an1);
     
     digits sevenSeg(digit_refclk, seconds_clk, an1, an2, an3, an4, seg, an, dp);
+    
+    
 endmodule
