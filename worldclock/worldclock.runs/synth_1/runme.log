@@ -14,23 +14,23 @@ Starting synth_design
 Attempting to get a license for feature 'Synthesis' and/or device 'xc7a35t'
 INFO: [Common 17-349] Got license for feature 'Synthesis' and/or device 'xc7a35t'
 INFO: Launching helper process for spawning children vivado processes
-INFO: Helper process launched with PID 9576 
+INFO: Helper process launched with PID 7204 
 ---------------------------------------------------------------------------------
-Starting RTL Elaboration : Time (s): cpu = 00:00:06 ; elapsed = 00:00:09 . Memory (MB): peak = 272.367 ; gain = 65.887
+Starting RTL Elaboration : Time (s): cpu = 00:00:11 ; elapsed = 00:00:15 . Memory (MB): peak = 271.484 ; gain = 65.094
 ---------------------------------------------------------------------------------
-INFO: [Synth 8-638] synthesizing module 'clock' [C:/Users/Calvin/Desktop/WordClock/worldclock/worldclock.srcs/sources_1/new/clock.v:23]
-INFO: [Synth 8-638] synthesizing module 'secondsTimer' [C:/Users/Calvin/Desktop/WordClock/worldclock/worldclock.srcs/sources_1/new/divider.v:23]
+INFO: [Synth 8-638] synthesizing module 'clock' [C:/Users/Turtle/Documents/GitHub/WordClock/worldclock/worldclock.srcs/sources_1/new/clock.v:23]
+INFO: [Synth 8-638] synthesizing module 'secondsTimer' [C:/Users/Turtle/Documents/GitHub/WordClock/worldclock/worldclock.srcs/sources_1/new/divider.v:23]
 	Parameter constnum bound to: 50000000 - type: integer 
-INFO: [Synth 8-256] done synthesizing module 'secondsTimer' (1#1) [C:/Users/Calvin/Desktop/WordClock/worldclock/worldclock.srcs/sources_1/new/divider.v:23]
-INFO: [Synth 8-638] synthesizing module 'refreshTimer' [C:/Users/Calvin/Desktop/WordClock/worldclock/worldclock.srcs/sources_1/new/refreshTimer.v:23]
+INFO: [Synth 8-256] done synthesizing module 'secondsTimer' (1#1) [C:/Users/Turtle/Documents/GitHub/WordClock/worldclock/worldclock.srcs/sources_1/new/divider.v:23]
+INFO: [Synth 8-638] synthesizing module 'refreshTimer' [C:/Users/Turtle/Documents/GitHub/WordClock/worldclock/worldclock.srcs/sources_1/new/refreshTimer.v:23]
 	Parameter constnum bound to: 50000 - type: integer 
-INFO: [Synth 8-256] done synthesizing module 'refreshTimer' (2#1) [C:/Users/Calvin/Desktop/WordClock/worldclock/worldclock.srcs/sources_1/new/refreshTimer.v:23]
-INFO: [Synth 8-638] synthesizing module 'counter' [C:/Users/Calvin/Desktop/WordClock/worldclock/worldclock.srcs/sources_1/new/counter.v:23]
+INFO: [Synth 8-256] done synthesizing module 'refreshTimer' (2#1) [C:/Users/Turtle/Documents/GitHub/WordClock/worldclock/worldclock.srcs/sources_1/new/refreshTimer.v:23]
+INFO: [Synth 8-638] synthesizing module 'counter' [C:/Users/Turtle/Documents/GitHub/WordClock/worldclock/worldclock.srcs/sources_1/new/counter.v:23]
 	Parameter minute bound to: 8'b00111011 
 	Parameter hour bound to: 8'b00111011 
 	Parameter hourLim bound to: 8'b00010111 
-INFO: [Synth 8-256] done synthesizing module 'counter' (3#1) [C:/Users/Calvin/Desktop/WordClock/worldclock/worldclock.srcs/sources_1/new/counter.v:23]
-INFO: [Synth 8-638] synthesizing module 'bcd' [C:/Users/Calvin/Desktop/WordClock/worldclock/worldclock.srcs/sources_1/new/bcd.v:23]
+INFO: [Synth 8-256] done synthesizing module 'counter' (3#1) [C:/Users/Turtle/Documents/GitHub/WordClock/worldclock/worldclock.srcs/sources_1/new/counter.v:23]
+INFO: [Synth 8-638] synthesizing module 'bcd' [C:/Users/Turtle/Documents/GitHub/WordClock/worldclock/worldclock.srcs/sources_1/new/bcd.v:23]
 	Parameter a bound to: 8'b11111110 
 	Parameter b bound to: 8'b11111101 
 	Parameter c bound to: 8'b11111011 
@@ -58,17 +58,37 @@ INFO: [Synth 8-638] synthesizing module 'bcd' [C:/Users/Calvin/Desktop/WordClock
 	Parameter b7 bound to: 4'b0111 
 	Parameter b8 bound to: 4'b1000 
 	Parameter b9 bound to: 4'b1001 
-INFO: [Synth 8-256] done synthesizing module 'bcd' (4#1) [C:/Users/Calvin/Desktop/WordClock/worldclock/worldclock.srcs/sources_1/new/bcd.v:23]
-INFO: [Synth 8-638] synthesizing module 'digits' [C:/Users/Calvin/Desktop/WordClock/worldclock/worldclock.srcs/sources_1/new/digits.v:23]
+INFO: [Synth 8-256] done synthesizing module 'bcd' (4#1) [C:/Users/Turtle/Documents/GitHub/WordClock/worldclock/worldclock.srcs/sources_1/new/bcd.v:23]
+INFO: [Synth 8-638] synthesizing module 'digits' [C:/Users/Turtle/Documents/GitHub/WordClock/worldclock/worldclock.srcs/sources_1/new/digits.v:23]
 	Parameter off bound to: 8'b11111111 
-INFO: [Synth 8-256] done synthesizing module 'digits' (5#1) [C:/Users/Calvin/Desktop/WordClock/worldclock/worldclock.srcs/sources_1/new/digits.v:23]
-INFO: [Synth 8-256] done synthesizing module 'clock' (6#1) [C:/Users/Calvin/Desktop/WordClock/worldclock/worldclock.srcs/sources_1/new/clock.v:23]
+INFO: [Synth 8-256] done synthesizing module 'digits' (5#1) [C:/Users/Turtle/Documents/GitHub/WordClock/worldclock/worldclock.srcs/sources_1/new/digits.v:23]
+INFO: [Synth 8-638] synthesizing module 'bcpin' [C:/Users/Turtle/Documents/GitHub/WordClock/worldclock/worldclock.srcs/sources_1/new/round.v:23]
+WARNING: [Synth 8-639] system function call 'bitstoreal' not supported [C:/Users/Turtle/Documents/GitHub/WordClock/worldclock/worldclock.srcs/sources_1/new/round.v:62]
+WARNING: [Synth 8-639] system function call 'bitstoreal' not supported [C:/Users/Turtle/Documents/GitHub/WordClock/worldclock/worldclock.srcs/sources_1/new/round.v:63]
+INFO: [Synth 8-256] done synthesizing module 'bcpin' (6#1) [C:/Users/Turtle/Documents/GitHub/WordClock/worldclock/worldclock.srcs/sources_1/new/round.v:23]
+INFO: [Synth 8-256] done synthesizing module 'clock' (7#1) [C:/Users/Turtle/Documents/GitHub/WordClock/worldclock/worldclock.srcs/sources_1/new/clock.v:23]
+WARNING: [Synth 8-3331] design bcpin has unconnected port hour[7]
+WARNING: [Synth 8-3331] design bcpin has unconnected port hour[6]
+WARNING: [Synth 8-3331] design bcpin has unconnected port hour[5]
+WARNING: [Synth 8-3331] design bcpin has unconnected port hour[4]
+WARNING: [Synth 8-3331] design bcpin has unconnected port hour[3]
+WARNING: [Synth 8-3331] design bcpin has unconnected port hour[2]
+WARNING: [Synth 8-3331] design bcpin has unconnected port hour[1]
+WARNING: [Synth 8-3331] design bcpin has unconnected port hour[0]
+WARNING: [Synth 8-3331] design bcpin has unconnected port minute[7]
+WARNING: [Synth 8-3331] design bcpin has unconnected port minute[6]
+WARNING: [Synth 8-3331] design bcpin has unconnected port minute[5]
+WARNING: [Synth 8-3331] design bcpin has unconnected port minute[4]
+WARNING: [Synth 8-3331] design bcpin has unconnected port minute[3]
+WARNING: [Synth 8-3331] design bcpin has unconnected port minute[2]
+WARNING: [Synth 8-3331] design bcpin has unconnected port minute[1]
+WARNING: [Synth 8-3331] design bcpin has unconnected port minute[0]
 WARNING: [Synth 8-3331] design digits has unconnected port num1[7]
 WARNING: [Synth 8-3331] design digits has unconnected port num2[7]
 WARNING: [Synth 8-3331] design digits has unconnected port num3[7]
 WARNING: [Synth 8-3331] design digits has unconnected port num4[7]
 ---------------------------------------------------------------------------------
-Finished RTL Elaboration : Time (s): cpu = 00:00:07 ; elapsed = 00:00:10 . Memory (MB): peak = 309.801 ; gain = 103.320
+Finished RTL Elaboration : Time (s): cpu = 00:00:12 ; elapsed = 00:00:17 . Memory (MB): peak = 308.918 ; gain = 102.527
 ---------------------------------------------------------------------------------
 
 Report Check Netlist: 
@@ -78,38 +98,38 @@ Report Check Netlist:
 |1     |multi_driven_nets |      0|        0|Passed |Multi driven nets |
 +------+------------------+-------+---------+-------+------------------+
 ---------------------------------------------------------------------------------
-Finished RTL Optimization Phase 1 : Time (s): cpu = 00:00:08 ; elapsed = 00:00:10 . Memory (MB): peak = 309.801 ; gain = 103.320
+Finished RTL Optimization Phase 1 : Time (s): cpu = 00:00:13 ; elapsed = 00:00:17 . Memory (MB): peak = 308.918 ; gain = 102.527
 ---------------------------------------------------------------------------------
 INFO: [Device 21-403] Loading part xc7a35tcpg236-1
 INFO: [Project 1-570] Preparing netlist for logic optimization
 
 Processing XDC Constraints
 Initializing timing engine
-Parsing XDC File [C:/Users/Calvin/Desktop/WordClock/Constraints/Basys3_Master.xdc]
-Finished Parsing XDC File [C:/Users/Calvin/Desktop/WordClock/Constraints/Basys3_Master.xdc]
-INFO: [Project 1-236] Implementation specific constraints were found while reading constraint file [C:/Users/Calvin/Desktop/WordClock/Constraints/Basys3_Master.xdc]. These constraints will be ignored for synthesis but will be used in implementation. Impacted constraints are listed in the file [.Xil/clock_propImpl.xdc].
+Parsing XDC File [C:/Users/Turtle/Documents/GitHub/WordClock/Constraints/Basys3_Master.xdc]
+Finished Parsing XDC File [C:/Users/Turtle/Documents/GitHub/WordClock/Constraints/Basys3_Master.xdc]
+INFO: [Project 1-236] Implementation specific constraints were found while reading constraint file [C:/Users/Turtle/Documents/GitHub/WordClock/Constraints/Basys3_Master.xdc]. These constraints will be ignored for synthesis but will be used in implementation. Impacted constraints are listed in the file [.Xil/clock_propImpl.xdc].
 Resolution: To avoid this warning, move constraints listed in [.Xil/clock_propImpl.xdc] to another XDC file and exclude this new file from synthesis with the used_in_synthesis property (File Properties dialog in GUI) and re-run elaboration/synthesis.
 Completed Processing XDC Constraints
 
 INFO: [Project 1-111] Unisim Transformation Summary:
 No Unisim elements were transformed.
 
-Constraint Validation Runtime : Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.007 . Memory (MB): peak = 597.859 ; gain = 0.000
+Constraint Validation Runtime : Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.091 . Memory (MB): peak = 597.445 ; gain = 0.000
 ---------------------------------------------------------------------------------
-Finished Constraint Validation : Time (s): cpu = 00:00:19 ; elapsed = 00:00:22 . Memory (MB): peak = 597.859 ; gain = 391.379
+Finished Constraint Validation : Time (s): cpu = 00:00:30 ; elapsed = 00:00:47 . Memory (MB): peak = 597.445 ; gain = 391.055
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start Loading Part and Timing Information
 ---------------------------------------------------------------------------------
 Loading part: xc7a35tcpg236-1
 ---------------------------------------------------------------------------------
-Finished Loading Part and Timing Information : Time (s): cpu = 00:00:19 ; elapsed = 00:00:22 . Memory (MB): peak = 597.859 ; gain = 391.379
+Finished Loading Part and Timing Information : Time (s): cpu = 00:00:30 ; elapsed = 00:00:48 . Memory (MB): peak = 597.445 ; gain = 391.055
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start Applying 'set_property' XDC Constraints
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished applying 'set_property' XDC Constraints : Time (s): cpu = 00:00:19 ; elapsed = 00:00:22 . Memory (MB): peak = 597.859 ; gain = 391.379
+Finished applying 'set_property' XDC Constraints : Time (s): cpu = 00:00:30 ; elapsed = 00:00:48 . Memory (MB): peak = 597.445 ; gain = 391.055
 ---------------------------------------------------------------------------------
 INFO: [Synth 8-5545] ROM "count" won't be mapped to RAM because address size (32) is larger than maximum supported(25)
 INFO: [Synth 8-5545] ROM "clk_div" won't be mapped to RAM because address size (32) is larger than maximum supported(25)
@@ -139,7 +159,7 @@ INFO: [Synth 8-5544] ROM "state" won't be mapped to Block RAM because address si
 ---------------------------------------------------------------------------------------------------
 INFO: [Synth 8-3354] encoded FSM with state register 'state_reg' using encoding 'sequential' in module 'digits'
 ---------------------------------------------------------------------------------
-Finished RTL Optimization Phase 2 : Time (s): cpu = 00:00:20 ; elapsed = 00:00:23 . Memory (MB): peak = 597.859 ; gain = 391.379
+Finished RTL Optimization Phase 2 : Time (s): cpu = 00:00:32 ; elapsed = 00:00:49 . Memory (MB): peak = 597.445 ; gain = 391.055
 ---------------------------------------------------------------------------------
 
 Report RTL Partitions: 
@@ -157,7 +177,7 @@ Detailed RTL Component Info :
 	   2 Input      4 Bit       Adders := 22    
 +---Registers : 
 	               32 Bit    Registers := 2     
-	                8 Bit    Registers := 3     
+	                8 Bit    Registers := 6     
 	                7 Bit    Registers := 1     
 	                4 Bit    Registers := 1     
 	                1 Bit    Registers := 3     
@@ -223,6 +243,10 @@ Detailed RTL Component Info :
 	  12 Input      7 Bit        Muxes := 1     
 	  12 Input      4 Bit        Muxes := 2     
 	  12 Input      1 Bit        Muxes := 4     
+Module bcpin 
+Detailed RTL Component Info : 
++---Registers : 
+	                8 Bit    Registers := 3     
 ---------------------------------------------------------------------------------
 Finished RTL Hierarchical Component Statistics
 ---------------------------------------------------------------------------------
@@ -235,7 +259,7 @@ BRAMs: 100 (col length: RAMB18 60 RAMB36 30)
 ---------------------------------------------------------------------------------
 Finished Part Resource Summary
 ---------------------------------------------------------------------------------
-Start Parallel Synthesis Optimization  : Time (s): cpu = 00:00:20 ; elapsed = 00:00:24 . Memory (MB): peak = 597.859 ; gain = 391.379
+Start Parallel Synthesis Optimization  : Time (s): cpu = 00:00:32 ; elapsed = 00:00:50 . Memory (MB): peak = 597.445 ; gain = 391.055
 ---------------------------------------------------------------------------------
 Start Cross Boundary Optimization
 ---------------------------------------------------------------------------------
@@ -245,9 +269,9 @@ INFO: [Synth 8-5545] ROM "refTimer/count" won't be mapped to RAM because address
 INFO: [Synth 8-5545] ROM "refTimer/freq" won't be mapped to RAM because address size (32) is larger than maximum supported(25)
 INFO: [Synth 8-5546] ROM "timeCounter/hr" won't be mapped to RAM because it is too sparse
 ---------------------------------------------------------------------------------
-Finished Cross Boundary Optimization : Time (s): cpu = 00:00:21 ; elapsed = 00:00:24 . Memory (MB): peak = 597.859 ; gain = 391.379
+Finished Cross Boundary Optimization : Time (s): cpu = 00:00:33 ; elapsed = 00:00:51 . Memory (MB): peak = 597.445 ; gain = 391.055
 ---------------------------------------------------------------------------------
-Finished Parallel Reinference  : Time (s): cpu = 00:00:21 ; elapsed = 00:00:24 . Memory (MB): peak = 597.859 ; gain = 391.379
+Finished Parallel Reinference  : Time (s): cpu = 00:00:33 ; elapsed = 00:00:51 . Memory (MB): peak = 597.445 ; gain = 391.055
 
 Report RTL Partitions: 
 +-+--------------+------------+----------+
@@ -257,10 +281,58 @@ Report RTL Partitions:
 ---------------------------------------------------------------------------------
 Start Area Optimization
 ---------------------------------------------------------------------------------
+INFO: [Synth 8-3886] merging instance 'bin2pin/JC_reg[0]' (FD) to 'bin2pin/JC_reg[7]'
+INFO: [Synth 8-3886] merging instance 'bin2pin/JC_reg[1]' (FD) to 'bin2pin/JC_reg[7]'
+INFO: [Synth 8-3886] merging instance 'bin2pin/JC_reg[2]' (FD) to 'bin2pin/JC_reg[7]'
+INFO: [Synth 8-3886] merging instance 'bin2pin/JC_reg[3]' (FD) to 'bin2pin/JC_reg[7]'
+INFO: [Synth 8-3886] merging instance 'bin2pin/JC_reg[4]' (FD) to 'bin2pin/JC_reg[7]'
+INFO: [Synth 8-3886] merging instance 'bin2pin/JC_reg[5]' (FD) to 'bin2pin/JB_reg[4]'
+INFO: [Synth 8-3886] merging instance 'bin2pin/JC_reg[6]' (FD) to 'bin2pin/JC_reg[7]'
+INFO: [Synth 8-3886] merging instance 'bin2pin/JC_reg[7]' (FD) to 'bin2pin/JB_reg[7]'
+INFO: [Synth 8-3886] merging instance 'bin2pin/JB_reg[0]' (FD) to 'bin2pin/JB_reg[7]'
+INFO: [Synth 8-3886] merging instance 'bin2pin/JB_reg[1]' (FD) to 'bin2pin/JB_reg[7]'
+INFO: [Synth 8-3886] merging instance 'bin2pin/JB_reg[2]' (FD) to 'bin2pin/JB_reg[7]'
+INFO: [Synth 8-3886] merging instance 'bin2pin/JB_reg[3]' (FD) to 'bin2pin/JB_reg[7]'
+INFO: [Synth 8-3886] merging instance 'bin2pin/JB_reg[4]' (FD) to 'bin2pin/JA_reg[7]'
+INFO: [Synth 8-3886] merging instance 'bin2pin/JB_reg[5]' (FD) to 'bin2pin/JB_reg[7]'
+INFO: [Synth 8-3886] merging instance 'bin2pin/JB_reg[6]' (FD) to 'bin2pin/JB_reg[7]'
+INFO: [Synth 8-3886] merging instance 'bin2pin/JB_reg[7]' (FD) to 'bin2pin/JA_reg[6]'
+INFO: [Synth 8-3886] merging instance 'bin2pin/JA_reg[0]' (FD) to 'bin2pin/JA_reg[7]'
+INFO: [Synth 8-3886] merging instance 'bin2pin/JA_reg[1]' (FD) to 'bin2pin/JA_reg[6]'
+INFO: [Synth 8-3886] merging instance 'bin2pin/JA_reg[2]' (FD) to 'bin2pin/JA_reg[6]'
+INFO: [Synth 8-3886] merging instance 'bin2pin/JA_reg[3]' (FD) to 'bin2pin/JA_reg[6]'
+INFO: [Synth 8-3886] merging instance 'bin2pin/JA_reg[4]' (FD) to 'bin2pin/JA_reg[6]'
+INFO: [Synth 8-3886] merging instance 'bin2pin/JA_reg[5]' (FD) to 'bin2pin/JA_reg[6]'
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (\bin2pin/JA_reg[6] )
+INFO: [Synth 8-3333] propagating constant 1 across sequential element (\bin2pin/JA_reg[7] )
+WARNING: [Synth 8-3332] Sequential element (bin2pin/JC_reg[6]) is unused and will be removed from module clock.
+WARNING: [Synth 8-3332] Sequential element (bin2pin/JC_reg[4]) is unused and will be removed from module clock.
+WARNING: [Synth 8-3332] Sequential element (bin2pin/JC_reg[3]) is unused and will be removed from module clock.
+WARNING: [Synth 8-3332] Sequential element (bin2pin/JC_reg[2]) is unused and will be removed from module clock.
+WARNING: [Synth 8-3332] Sequential element (bin2pin/JC_reg[1]) is unused and will be removed from module clock.
+WARNING: [Synth 8-3332] Sequential element (bin2pin/JC_reg[0]) is unused and will be removed from module clock.
+WARNING: [Synth 8-3332] Sequential element (bin2pin/JB_reg[4]) is unused and will be removed from module clock.
+WARNING: [Synth 8-3332] Sequential element (bin2pin/JC_reg[5]) is unused and will be removed from module clock.
+WARNING: [Synth 8-3332] Sequential element (bin2pin/JB_reg[7]) is unused and will be removed from module clock.
+WARNING: [Synth 8-3332] Sequential element (bin2pin/JC_reg[7]) is unused and will be removed from module clock.
+WARNING: [Synth 8-3332] Sequential element (bin2pin/JB_reg[0]) is unused and will be removed from module clock.
+WARNING: [Synth 8-3332] Sequential element (bin2pin/JB_reg[1]) is unused and will be removed from module clock.
+WARNING: [Synth 8-3332] Sequential element (bin2pin/JB_reg[2]) is unused and will be removed from module clock.
+WARNING: [Synth 8-3332] Sequential element (bin2pin/JB_reg[3]) is unused and will be removed from module clock.
+WARNING: [Synth 8-3332] Sequential element (bin2pin/JA_reg[7]) is unused and will be removed from module clock.
+WARNING: [Synth 8-3332] Sequential element (bin2pin/JB_reg[5]) is unused and will be removed from module clock.
+WARNING: [Synth 8-3332] Sequential element (bin2pin/JB_reg[6]) is unused and will be removed from module clock.
+WARNING: [Synth 8-3332] Sequential element (bin2pin/JA_reg[6]) is unused and will be removed from module clock.
+WARNING: [Synth 8-3332] Sequential element (bin2pin/JA_reg[0]) is unused and will be removed from module clock.
+WARNING: [Synth 8-3332] Sequential element (bin2pin/JA_reg[1]) is unused and will be removed from module clock.
+WARNING: [Synth 8-3332] Sequential element (bin2pin/JA_reg[2]) is unused and will be removed from module clock.
+WARNING: [Synth 8-3332] Sequential element (bin2pin/JA_reg[3]) is unused and will be removed from module clock.
+WARNING: [Synth 8-3332] Sequential element (bin2pin/JA_reg[4]) is unused and will be removed from module clock.
+WARNING: [Synth 8-3332] Sequential element (bin2pin/JA_reg[5]) is unused and will be removed from module clock.
 ---------------------------------------------------------------------------------
-Finished Area Optimization : Time (s): cpu = 00:00:24 ; elapsed = 00:00:27 . Memory (MB): peak = 597.859 ; gain = 391.379
+Finished Area Optimization : Time (s): cpu = 00:00:38 ; elapsed = 00:00:57 . Memory (MB): peak = 597.445 ; gain = 391.055
 ---------------------------------------------------------------------------------
-Finished Parallel Area Optimization  : Time (s): cpu = 00:00:24 ; elapsed = 00:00:27 . Memory (MB): peak = 597.859 ; gain = 391.379
+Finished Parallel Area Optimization  : Time (s): cpu = 00:00:38 ; elapsed = 00:00:57 . Memory (MB): peak = 597.445 ; gain = 391.055
 
 Report RTL Partitions: 
 +-+--------------+------------+----------+
@@ -274,10 +346,10 @@ Start Timing Optimization
 Start Applying XDC Timing Constraints
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished Applying XDC Timing Constraints : Time (s): cpu = 00:00:37 ; elapsed = 00:00:41 . Memory (MB): peak = 597.859 ; gain = 391.379
+Finished Applying XDC Timing Constraints : Time (s): cpu = 00:00:58 ; elapsed = 00:01:21 . Memory (MB): peak = 597.445 ; gain = 391.055
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished Timing Optimization : Time (s): cpu = 00:00:37 ; elapsed = 00:00:41 . Memory (MB): peak = 597.859 ; gain = 391.379
+Finished Timing Optimization : Time (s): cpu = 00:00:58 ; elapsed = 00:01:21 . Memory (MB): peak = 597.445 ; gain = 391.055
 ---------------------------------------------------------------------------------
 
 Report RTL Partitions: 
@@ -289,16 +361,16 @@ Report RTL Partitions:
 Start Technology Mapping
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished Technology Mapping : Time (s): cpu = 00:00:37 ; elapsed = 00:00:42 . Memory (MB): peak = 597.859 ; gain = 391.379
+Finished Technology Mapping : Time (s): cpu = 00:00:59 ; elapsed = 00:01:22 . Memory (MB): peak = 597.445 ; gain = 391.055
 ---------------------------------------------------------------------------------
-Finished Parallel Technology Mapping Optimization  : Time (s): cpu = 00:00:37 ; elapsed = 00:00:42 . Memory (MB): peak = 597.859 ; gain = 391.379
+Finished Parallel Technology Mapping Optimization  : Time (s): cpu = 00:00:59 ; elapsed = 00:01:22 . Memory (MB): peak = 597.445 ; gain = 391.055
 
 Report RTL Partitions: 
 +-+--------------+------------+----------+
 | |RTL Partition |Replication |Instances |
 +-+--------------+------------+----------+
 +-+--------------+------------+----------+
-Finished Parallel Synthesis Optimization  : Time (s): cpu = 00:00:37 ; elapsed = 00:00:42 . Memory (MB): peak = 597.859 ; gain = 391.379
+Finished Parallel Synthesis Optimization  : Time (s): cpu = 00:00:59 ; elapsed = 00:01:22 . Memory (MB): peak = 597.445 ; gain = 391.055
 ---------------------------------------------------------------------------------
 Start IO Insertion
 ---------------------------------------------------------------------------------
@@ -315,7 +387,7 @@ Start Final Netlist Cleanup
 Finished Final Netlist Cleanup
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished IO Insertion : Time (s): cpu = 00:00:38 ; elapsed = 00:00:42 . Memory (MB): peak = 597.859 ; gain = 391.379
+Finished IO Insertion : Time (s): cpu = 00:01:00 ; elapsed = 00:01:24 . Memory (MB): peak = 597.445 ; gain = 391.055
 ---------------------------------------------------------------------------------
 
 Report Check Netlist: 
@@ -328,7 +400,7 @@ Report Check Netlist:
 Start Renaming Generated Instances
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished Renaming Generated Instances : Time (s): cpu = 00:00:38 ; elapsed = 00:00:42 . Memory (MB): peak = 597.859 ; gain = 391.379
+Finished Renaming Generated Instances : Time (s): cpu = 00:01:00 ; elapsed = 00:01:24 . Memory (MB): peak = 597.445 ; gain = 391.055
 ---------------------------------------------------------------------------------
 
 Report RTL Partitions: 
@@ -340,25 +412,25 @@ Report RTL Partitions:
 Start Rebuilding User Hierarchy
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished Rebuilding User Hierarchy : Time (s): cpu = 00:00:38 ; elapsed = 00:00:42 . Memory (MB): peak = 597.859 ; gain = 391.379
+Finished Rebuilding User Hierarchy : Time (s): cpu = 00:01:00 ; elapsed = 00:01:24 . Memory (MB): peak = 597.445 ; gain = 391.055
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start Renaming Generated Ports
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished Renaming Generated Ports : Time (s): cpu = 00:00:38 ; elapsed = 00:00:42 . Memory (MB): peak = 597.859 ; gain = 391.379
+Finished Renaming Generated Ports : Time (s): cpu = 00:01:00 ; elapsed = 00:01:24 . Memory (MB): peak = 597.445 ; gain = 391.055
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start Handling Custom Attributes
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished Handling Custom Attributes : Time (s): cpu = 00:00:38 ; elapsed = 00:00:42 . Memory (MB): peak = 597.859 ; gain = 391.379
+Finished Handling Custom Attributes : Time (s): cpu = 00:01:00 ; elapsed = 00:01:24 . Memory (MB): peak = 597.445 ; gain = 391.055
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start Renaming Generated Nets
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished Renaming Generated Nets : Time (s): cpu = 00:00:38 ; elapsed = 00:00:43 . Memory (MB): peak = 597.859 ; gain = 391.379
+Finished Renaming Generated Nets : Time (s): cpu = 00:01:00 ; elapsed = 00:01:24 . Memory (MB): peak = 597.445 ; gain = 391.055
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start Writing Synthesis Report
@@ -386,25 +458,25 @@ Report Cell Usage:
 |10    |FDCE   |    57|
 |11    |FDRE   |    49|
 |12    |IBUF   |     4|
-|13    |OBUF   |    12|
+|13    |OBUF   |    36|
 +------+-------+------+
 
 Report Instance Areas: 
 +------+--------------+-------------+------+
 |      |Instance      |Module       |Cells |
 +------+--------------+-------------+------+
-|1     |top           |             |   390|
+|1     |top           |             |   414|
 |2     |  refTimer    |refreshTimer |    83|
 |3     |  secTimer    |secondsTimer |   113|
 |4     |  sevenSeg    |digits       |    32|
 |5     |  timeCounter |counter      |   145|
 +------+--------------+-------------+------+
 ---------------------------------------------------------------------------------
-Finished Writing Synthesis Report : Time (s): cpu = 00:00:38 ; elapsed = 00:00:43 . Memory (MB): peak = 597.859 ; gain = 391.379
+Finished Writing Synthesis Report : Time (s): cpu = 00:01:00 ; elapsed = 00:01:24 . Memory (MB): peak = 597.445 ; gain = 391.055
 ---------------------------------------------------------------------------------
-Synthesis finished with 0 errors, 0 critical warnings and 0 warnings.
-Synthesis Optimization Runtime : Time (s): cpu = 00:00:24 ; elapsed = 00:00:31 . Memory (MB): peak = 597.859 ; gain = 103.320
-Synthesis Optimization Complete : Time (s): cpu = 00:00:38 ; elapsed = 00:00:43 . Memory (MB): peak = 597.859 ; gain = 391.379
+Synthesis finished with 0 errors, 0 critical warnings and 24 warnings.
+Synthesis Optimization Runtime : Time (s): cpu = 00:00:37 ; elapsed = 00:00:55 . Memory (MB): peak = 597.445 ; gain = 102.527
+Synthesis Optimization Complete : Time (s): cpu = 00:01:00 ; elapsed = 00:01:25 . Memory (MB): peak = 597.445 ; gain = 391.055
 INFO: [Project 1-571] Translating synthesized netlist
 INFO: [Netlist 29-17] Analyzing 20 Unisim elements for replacement
 INFO: [Netlist 29-28] Unisim Transformation completed in 0 CPU seconds
@@ -414,8 +486,8 @@ INFO: [Project 1-111] Unisim Transformation Summary:
 No Unisim elements were transformed.
 
 INFO: [Common 17-83] Releasing license: Synthesis
-40 Infos, 4 Warnings, 0 Critical Warnings and 0 Errors encountered.
+66 Infos, 46 Warnings, 0 Critical Warnings and 0 Errors encountered.
 synth_design completed successfully
-synth_design: Time (s): cpu = 00:00:38 ; elapsed = 00:00:40 . Memory (MB): peak = 597.859 ; gain = 391.379
-report_utilization: Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.023 . Memory (MB): peak = 597.859 ; gain = 0.000
-INFO: [Common 17-206] Exiting Vivado at Sat Apr 23 13:10:52 2016...
+synth_design: Time (s): cpu = 00:00:59 ; elapsed = 00:01:25 . Memory (MB): peak = 597.445 ; gain = 391.055
+report_utilization: Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.737 . Memory (MB): peak = 597.445 ; gain = 0.000
+INFO: [Common 17-206] Exiting Vivado at Wed Apr 27 11:10:33 2016...

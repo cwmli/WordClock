@@ -40,9 +40,7 @@ module clock(
     wire [7:0] minute;
     
     //Pmod port pins
-    wire [7:0] ja_pins;
-    wire [7:0] jb_pins;
-    wire [7:0] jc_pins;
+    wire [7:0] pins [9:0];
          
     //segment displays
     // 4 3 : 2 1
@@ -61,5 +59,5 @@ module clock(
     
     digits sevenSeg(digit_refclk, seconds_clk, an1, an2, an3, an4, seg, an, dp);
     
-    
+    bcpin bin2pin(digit_refclk, hour, minute, JA, JB, JC);
 endmodule

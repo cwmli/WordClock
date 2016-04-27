@@ -3,10 +3,10 @@
 <!--The data in this file is primarily intended for consumption by Xilinx tools.
 The structure and the elements are likely to change over the next few releases.
 This means code written to parse this file will need to be revisited each subsequent release.-->
-<application name="pa" timeStamp="Tue Apr 26 23:00:01 2016">
+<application name="pa" timeStamp="Wed Apr 27 11:08:56 2016">
 <section name="Project Information" visible="false">
 <property name="ProjectID" value="2df8b268f6be4ff78c6bdd3cbfc1a112" type="ProjectID"/>
-<property name="ProjectIteration" value="42" type="ProjectIteration"/>
+<property name="ProjectIteration" value="43" type="ProjectIteration"/>
 </section>
 <section name="PlanAhead Usage" visible="true">
 <item name="Project Data">
@@ -17,363 +17,32 @@ This means code written to parse this file will need to be revisited each subseq
 <property name="ImplStrategy" value="Vivado Implementation Defaults" type="ImplStrategy"/>
 </item>
 <item name="Java Command Handlers">
-<property name="AddSources" value="5" type="JavaHandler"/>
+<property name="AddSources" value="6" type="JavaHandler"/>
 <property name="AutoConnectTarget" value="4" type="JavaHandler"/>
 <property name="CloseProject" value="1" type="JavaHandler"/>
-<property name="EditDelete" value="1" type="JavaHandler"/>
+<property name="EditDelete" value="2" type="JavaHandler"/>
 <property name="EditUndo" value="2" type="JavaHandler"/>
 <property name="LaunchProgramFpga" value="20" type="JavaHandler"/>
 <property name="OpenHardwareManager" value="18" type="JavaHandler"/>
-<property name="OpenProject" value="3" type="JavaHandler"/>
+<property name="OpenProject" value="4" type="JavaHandler"/>
 <property name="ProgramDevice" value="5" type="JavaHandler"/>
 <property name="RunBitgen" value="19" type="JavaHandler"/>
-<property name="RunImplementation" value="22" type="JavaHandler"/>
-<property name="RunSynthesis" value="34" type="JavaHandler"/>
+<property name="RunImplementation" value="23" type="JavaHandler"/>
+<property name="RunSynthesis" value="37" type="JavaHandler"/>
 <property name="SaveFileProxyHandler" value="3" type="JavaHandler"/>
-<property name="ShowView" value="15" type="JavaHandler"/>
+<property name="ShowView" value="16" type="JavaHandler"/>
 <property name="ViewTaskProjectManager" value="14" type="JavaHandler"/>
 <property name="ViewTaskSynthesis" value="1" type="JavaHandler"/>
 </item>
 <item name="Gui Resources Info">
-<property name="Basys3_Master.xdc, 236, 167" value="1" type="GuiResourceData"/>
-<property name="Basys3_Master.xdc, 447, 405" value="1" type="GuiResourceData"/>
-<property name="Basys3_Master.xdc, 467, 418" value="1" type="GuiResourceData"/>
-<property name="Basys3_Master.xdc, 477, 403" value="1" type="GuiResourceData"/>
-<property name="FINISH, Finish" value="1" type="GuiResourceData"/>
-<property name="NEXT, Next " value="1" type="GuiResourceData"/>
-<property name="PAResourceAtoD.CreateSrcFileDialog_FILE_NAME, round" value="1" type="GuiResourceData"/>
-<property name="PAResourceCommand.PACommandNames_ADD_SOURCES, Add Sources..." value="1" type="GuiResourceData"/>
-<property name="PAResourceCommand.PACommandNames_AUTO_UPDATE_HIER, Hierarchy Update" value="6" type="GuiResourceData"/>
-<property name="PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, [root, Constraints, constrs_1, Basys3_Master.xdc], 4, false" value="1" type="GuiResourceData"/>
-<property name="PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, [root, Constraints, constrs_1, Basys3_Master.xdc], 4, false, false, false, false, false, true" value="1" type="GuiResourceData"/>
-<property name="PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, [root, Constraints], 2" value="1" type="GuiResourceData"/>
-<property name="PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, [root, Design Sources, bcpin (round.v" value="5" type="GuiResourceData"/>
-<property name="PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, [root, Design Sources, clock (clock.v" value="16" type="GuiResourceData"/>
-<property name="PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, [root, Design Sources, round (round.v" value="2" type="GuiResourceData"/>
-<property name="PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, [root, Design Sources], 0, true" value="1" type="GuiResourceData"/>
-<property name="PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, [root, Design Sources], 0, true, false, false, false, true, false" value="1" type="GuiResourceData"/>
-<property name="PAResourceEtoH.GettingStartedView_OPEN_PROJECT, Open Project" value="1" type="GuiResourceData"/>
-<property name="PAResourceOtoP.PAViews_CODE, Code" value="4" type="GuiResourceData"/>
-<property name="PAResourceOtoP.PAViews_PROJECT_SUMMARY, Project Summary" value="1" type="GuiResourceData"/>
-<property name="PAResourceQtoS.SrcChooserPanel_CREATE_FILE, Create File" value="2" type="GuiResourceData"/>
-<property name="PAResourceQtoS.SrcMenu_IP_HIERARCHY, IP Hierarchy" value="6" type="GuiResourceData"/>
-<property name="RDIResource.BaseDialog_CANCEL, Cancel" value="1" type="GuiResourceData"/>
-<property name="RDIResource.BaseDialog_OK, OK" value="2" type="GuiResourceData"/>
-<property name="clock.v, 187, 193" value="1" type="GuiResourceData"/>
-<property name="clock.v, 189, 258" value="1" type="GuiResourceData"/>
-<property name="clock.v, 237, 498" value="1" type="GuiResourceData"/>
-<property name="clock.v, 238, 455" value="1" type="GuiResourceData"/>
-<property name="clock.v, 241, 453" value="2" type="GuiResourceData"/>
-<property name="clock.v, 241, 453, false, false, false, false, true" value="1" type="GuiResourceData"/>
-<property name="clock.v, 247, 475" value="1" type="GuiResourceData"/>
-<property name="clock.v, 247, 524" value="1" type="GuiResourceData"/>
-<property name="clock.v, 248, 459" value="1" type="GuiResourceData"/>
-<property name="clock.v, 252, 451" value="1" type="GuiResourceData"/>
-<property name="clock.v, 260, 205" value="1" type="GuiResourceData"/>
-<property name="clock.v, 375, 395" value="1" type="GuiResourceData"/>
-<property name="clock.v, 401, 500" value="1" type="GuiResourceData"/>
-<property name="clock.v, 462, 499" value="1" type="GuiResourceData"/>
-<property name="clock.v, 506, 490" value="1" type="GuiResourceData"/>
-<property name="clock.v, 626, 523" value="1" type="GuiResourceData"/>
-<property name="clock.v, 626, 530" value="1" type="GuiResourceData"/>
-<property name="clock.v, 634, 532" value="1" type="GuiResourceData"/>
-<property name="round.v, 100, 95" value="1" type="GuiResourceData"/>
-<property name="round.v, 103, 403" value="1" type="GuiResourceData"/>
-<property name="round.v, 103, 443" value="1" type="GuiResourceData"/>
-<property name="round.v, 105, 343" value="1" type="GuiResourceData"/>
-<property name="round.v, 109, 406" value="1" type="GuiResourceData"/>
-<property name="round.v, 109, 484" value="1" type="GuiResourceData"/>
-<property name="round.v, 109, 514" value="1" type="GuiResourceData"/>
-<property name="round.v, 124, 355" value="1" type="GuiResourceData"/>
-<property name="round.v, 125, 310" value="1" type="GuiResourceData"/>
-<property name="round.v, 128, 529" value="1" type="GuiResourceData"/>
-<property name="round.v, 131, 517" value="1" type="GuiResourceData"/>
-<property name="round.v, 134, 421" value="1" type="GuiResourceData"/>
-<property name="round.v, 136, 481" value="1" type="GuiResourceData"/>
-<property name="round.v, 137, 485" value="1" type="GuiResourceData"/>
-<property name="round.v, 139, 352" value="1" type="GuiResourceData"/>
-<property name="round.v, 142, 465" value="1" type="GuiResourceData"/>
-<property name="round.v, 142, 560" value="1" type="GuiResourceData"/>
-<property name="round.v, 143, 487" value="1" type="GuiResourceData"/>
-<property name="round.v, 144, 450" value="1" type="GuiResourceData"/>
-<property name="round.v, 144, 480" value="1" type="GuiResourceData"/>
-<property name="round.v, 144, 483" value="1" type="GuiResourceData"/>
-<property name="round.v, 145, 484" value="1" type="GuiResourceData"/>
-<property name="round.v, 145, 500" value="1" type="GuiResourceData"/>
-<property name="round.v, 146, 522" value="1" type="GuiResourceData"/>
-<property name="round.v, 146, 527" value="1" type="GuiResourceData"/>
-<property name="round.v, 147, 285" value="1" type="GuiResourceData"/>
-<property name="round.v, 148, 163" value="1" type="GuiResourceData"/>
-<property name="round.v, 148, 451" value="1" type="GuiResourceData"/>
-<property name="round.v, 148, 511" value="1" type="GuiResourceData"/>
-<property name="round.v, 149, 363" value="1" type="GuiResourceData"/>
-<property name="round.v, 149, 398" value="1" type="GuiResourceData"/>
-<property name="round.v, 149, 398, false, false, false, false, true" value="1" type="GuiResourceData"/>
-<property name="round.v, 150, 440" value="1" type="GuiResourceData"/>
-<property name="round.v, 150, 467" value="1" type="GuiResourceData"/>
-<property name="round.v, 151, 483" value="1" type="GuiResourceData"/>
-<property name="round.v, 151, 530" value="1" type="GuiResourceData"/>
-<property name="round.v, 154, 130" value="1" type="GuiResourceData"/>
-<property name="round.v, 154, 159" value="1" type="GuiResourceData"/>
-<property name="round.v, 154, 198" value="1" type="GuiResourceData"/>
-<property name="round.v, 154, 418" value="1" type="GuiResourceData"/>
-<property name="round.v, 154, 69" value="1" type="GuiResourceData"/>
-<property name="round.v, 155, 145" value="1" type="GuiResourceData"/>
-<property name="round.v, 155, 165" value="1" type="GuiResourceData"/>
-<property name="round.v, 156, 531" value="1" type="GuiResourceData"/>
-<property name="round.v, 157, 260" value="1" type="GuiResourceData"/>
-<property name="round.v, 157, 431" value="1" type="GuiResourceData"/>
-<property name="round.v, 159, 466" value="1" type="GuiResourceData"/>
-<property name="round.v, 160, 366" value="1" type="GuiResourceData"/>
-<property name="round.v, 160, 415" value="1" type="GuiResourceData"/>
-<property name="round.v, 163, 318" value="1" type="GuiResourceData"/>
-<property name="round.v, 167, 139" value="1" type="GuiResourceData"/>
-<property name="round.v, 167, 330" value="1" type="GuiResourceData"/>
-<property name="round.v, 167, 466" value="1" type="GuiResourceData"/>
-<property name="round.v, 168, 263" value="1" type="GuiResourceData"/>
-<property name="round.v, 168, 542" value="1" type="GuiResourceData"/>
-<property name="round.v, 169, 519" value="1" type="GuiResourceData"/>
-<property name="round.v, 170, 249" value="1" type="GuiResourceData"/>
-<property name="round.v, 170, 479" value="1" type="GuiResourceData"/>
-<property name="round.v, 170, 528" value="1" type="GuiResourceData"/>
-<property name="round.v, 172, 468" value="1" type="GuiResourceData"/>
-<property name="round.v, 173, 489" value="1" type="GuiResourceData"/>
-<property name="round.v, 174, 513" value="1" type="GuiResourceData"/>
-<property name="round.v, 175, 415" value="1" type="GuiResourceData"/>
-<property name="round.v, 175, 534" value="1" type="GuiResourceData"/>
-<property name="round.v, 176, 407" value="1" type="GuiResourceData"/>
-<property name="round.v, 178, 139" value="1" type="GuiResourceData"/>
-<property name="round.v, 178, 429" value="1" type="GuiResourceData"/>
-<property name="round.v, 178, 537" value="1" type="GuiResourceData"/>
-<property name="round.v, 179, 198" value="1" type="GuiResourceData"/>
-<property name="round.v, 181, 472" value="1" type="GuiResourceData"/>
-<property name="round.v, 181, 514" value="1" type="GuiResourceData"/>
-<property name="round.v, 181, 515" value="1" type="GuiResourceData"/>
-<property name="round.v, 182, 461" value="1" type="GuiResourceData"/>
-<property name="round.v, 182, 496" value="1" type="GuiResourceData"/>
-<property name="round.v, 183, 131" value="1" type="GuiResourceData"/>
-<property name="round.v, 183, 147" value="1" type="GuiResourceData"/>
-<property name="round.v, 183, 399" value="1" type="GuiResourceData"/>
-<property name="round.v, 184, 229" value="1" type="GuiResourceData"/>
-<property name="round.v, 184, 259" value="1" type="GuiResourceData"/>
-<property name="round.v, 184, 272" value="1" type="GuiResourceData"/>
-<property name="round.v, 184, 411" value="1" type="GuiResourceData"/>
-<property name="round.v, 184, 466" value="1" type="GuiResourceData"/>
-<property name="round.v, 185, 129" value="1" type="GuiResourceData"/>
-<property name="round.v, 185, 154" value="1" type="GuiResourceData"/>
-<property name="round.v, 185, 365" value="1" type="GuiResourceData"/>
-<property name="round.v, 186, 132" value="1" type="GuiResourceData"/>
-<property name="round.v, 186, 175" value="1" type="GuiResourceData"/>
-<property name="round.v, 186, 175, false, false, false, false, true" value="1" type="GuiResourceData"/>
-<property name="round.v, 186, 263" value="1" type="GuiResourceData"/>
-<property name="round.v, 186, 280" value="1" type="GuiResourceData"/>
-<property name="round.v, 186, 347" value="1" type="GuiResourceData"/>
-<property name="round.v, 186, 349" value="1" type="GuiResourceData"/>
-<property name="round.v, 186, 467" value="1" type="GuiResourceData"/>
-<property name="round.v, 187, 129" value="1" type="GuiResourceData"/>
-<property name="round.v, 187, 145" value="1" type="GuiResourceData"/>
-<property name="round.v, 187, 147" value="1" type="GuiResourceData"/>
-<property name="round.v, 187, 211" value="1" type="GuiResourceData"/>
-<property name="round.v, 188, 134" value="1" type="GuiResourceData"/>
-<property name="round.v, 188, 144" value="1" type="GuiResourceData"/>
-<property name="round.v, 188, 228" value="1" type="GuiResourceData"/>
-<property name="round.v, 188, 426" value="1" type="GuiResourceData"/>
-<property name="round.v, 189, 156" value="1" type="GuiResourceData"/>
-<property name="round.v, 189, 284" value="1" type="GuiResourceData"/>
-<property name="round.v, 189, 536" value="1" type="GuiResourceData"/>
-<property name="round.v, 191, 400" value="1" type="GuiResourceData"/>
-<property name="round.v, 191, 482" value="1" type="GuiResourceData"/>
-<property name="round.v, 191, 502" value="1" type="GuiResourceData"/>
-<property name="round.v, 192, 331" value="1" type="GuiResourceData"/>
-<property name="round.v, 192, 348" value="1" type="GuiResourceData"/>
-<property name="round.v, 193, 483" value="1" type="GuiResourceData"/>
-<property name="round.v, 194, 322" value="1" type="GuiResourceData"/>
-<property name="round.v, 196, 251" value="1" type="GuiResourceData"/>
-<property name="round.v, 196, 454" value="1" type="GuiResourceData"/>
-<property name="round.v, 197, 543" value="1" type="GuiResourceData"/>
-<property name="round.v, 197, 572" value="1" type="GuiResourceData"/>
-<property name="round.v, 200, 489" value="1" type="GuiResourceData"/>
-<property name="round.v, 202, 462" value="1" type="GuiResourceData"/>
-<property name="round.v, 202, 525" value="1" type="GuiResourceData"/>
-<property name="round.v, 203, 280" value="1" type="GuiResourceData"/>
-<property name="round.v, 204, 417" value="1" type="GuiResourceData"/>
-<property name="round.v, 206, 498" value="1" type="GuiResourceData"/>
-<property name="round.v, 208, 474" value="1" type="GuiResourceData"/>
-<property name="round.v, 209, 197" value="1" type="GuiResourceData"/>
-<property name="round.v, 209, 197, false, false, false, false, true" value="1" type="GuiResourceData"/>
-<property name="round.v, 209, 468" value="1" type="GuiResourceData"/>
-<property name="round.v, 209, 544" value="1" type="GuiResourceData"/>
-<property name="round.v, 210, 477" value="1" type="GuiResourceData"/>
-<property name="round.v, 211, 520" value="1" type="GuiResourceData"/>
-<property name="round.v, 213, 469" value="2" type="GuiResourceData"/>
-<property name="round.v, 213, 508" value="1" type="GuiResourceData"/>
-<property name="round.v, 214, 451" value="1" type="GuiResourceData"/>
-<property name="round.v, 215, 445" value="1" type="GuiResourceData"/>
-<property name="round.v, 217, 132" value="1" type="GuiResourceData"/>
-<property name="round.v, 218, 436" value="1" type="GuiResourceData"/>
-<property name="round.v, 218, 457" value="1" type="GuiResourceData"/>
-<property name="round.v, 218, 502" value="1" type="GuiResourceData"/>
-<property name="round.v, 220, 189" value="1" type="GuiResourceData"/>
-<property name="round.v, 223, 264" value="1" type="GuiResourceData"/>
-<property name="round.v, 224, 468" value="1" type="GuiResourceData"/>
-<property name="round.v, 228, 476" value="1" type="GuiResourceData"/>
-<property name="round.v, 229, 478" value="1" type="GuiResourceData"/>
-<property name="round.v, 230, 195" value="1" type="GuiResourceData"/>
-<property name="round.v, 230, 517" value="1" type="GuiResourceData"/>
-<property name="round.v, 231, 430" value="1" type="GuiResourceData"/>
-<property name="round.v, 232, 245" value="1" type="GuiResourceData"/>
-<property name="round.v, 235, 248" value="1" type="GuiResourceData"/>
-<property name="round.v, 235, 471" value="1" type="GuiResourceData"/>
-<property name="round.v, 237, 282" value="1" type="GuiResourceData"/>
-<property name="round.v, 238, 207" value="1" type="GuiResourceData"/>
-<property name="round.v, 238, 383" value="1" type="GuiResourceData"/>
-<property name="round.v, 239, 310" value="1" type="GuiResourceData"/>
-<property name="round.v, 24, 438" value="1" type="GuiResourceData"/>
-<property name="round.v, 240, 199" value="1" type="GuiResourceData"/>
-<property name="round.v, 240, 283" value="1" type="GuiResourceData"/>
-<property name="round.v, 240, 409" value="1" type="GuiResourceData"/>
-<property name="round.v, 240, 469" value="1" type="GuiResourceData"/>
-<property name="round.v, 243, 233" value="1" type="GuiResourceData"/>
-<property name="round.v, 244, 177" value="1" type="GuiResourceData"/>
-<property name="round.v, 244, 270" value="1" type="GuiResourceData"/>
-<property name="round.v, 244, 341" value="1" type="GuiResourceData"/>
-<property name="round.v, 244, 504" value="1" type="GuiResourceData"/>
-<property name="round.v, 246, 453" value="1" type="GuiResourceData"/>
-<property name="round.v, 247, 164" value="1" type="GuiResourceData"/>
-<property name="round.v, 247, 238" value="1" type="GuiResourceData"/>
-<property name="round.v, 247, 259" value="1" type="GuiResourceData"/>
-<property name="round.v, 247, 425" value="1" type="GuiResourceData"/>
-<property name="round.v, 248, 490" value="1" type="GuiResourceData"/>
-<property name="round.v, 249, 234" value="1" type="GuiResourceData"/>
-<property name="round.v, 249, 248" value="1" type="GuiResourceData"/>
-<property name="round.v, 249, 272" value="1" type="GuiResourceData"/>
-<property name="round.v, 249, 398" value="1" type="GuiResourceData"/>
-<property name="round.v, 249, 499" value="1" type="GuiResourceData"/>
-<property name="round.v, 259, 321" value="1" type="GuiResourceData"/>
-<property name="round.v, 259, 326" value="1" type="GuiResourceData"/>
-<property name="round.v, 259, 448" value="1" type="GuiResourceData"/>
-<property name="round.v, 261, 295" value="1" type="GuiResourceData"/>
-<property name="round.v, 263, 344" value="1" type="GuiResourceData"/>
-<property name="round.v, 263, 450" value="1" type="GuiResourceData"/>
-<property name="round.v, 266, 383" value="1" type="GuiResourceData"/>
-<property name="round.v, 267, 161" value="1" type="GuiResourceData"/>
-<property name="round.v, 269, 330" value="1" type="GuiResourceData"/>
-<property name="round.v, 272, 448" value="1" type="GuiResourceData"/>
-<property name="round.v, 274, 121" value="1" type="GuiResourceData"/>
-<property name="round.v, 274, 456" value="1" type="GuiResourceData"/>
-<property name="round.v, 274, 478" value="1" type="GuiResourceData"/>
-<property name="round.v, 275, 136" value="1" type="GuiResourceData"/>
-<property name="round.v, 278, 326" value="1" type="GuiResourceData"/>
-<property name="round.v, 278, 391" value="1" type="GuiResourceData"/>
-<property name="round.v, 283, 265" value="1" type="GuiResourceData"/>
-<property name="round.v, 283, 377" value="1" type="GuiResourceData"/>
-<property name="round.v, 283, 473" value="1" type="GuiResourceData"/>
-<property name="round.v, 283, 503" value="1" type="GuiResourceData"/>
-<property name="round.v, 287, 491" value="1" type="GuiResourceData"/>
-<property name="round.v, 288, 527" value="1" type="GuiResourceData"/>
-<property name="round.v, 29, 439" value="1" type="GuiResourceData"/>
-<property name="round.v, 290, 153" value="1" type="GuiResourceData"/>
-<property name="round.v, 292, 526" value="1" type="GuiResourceData"/>
-<property name="round.v, 295, 246" value="1" type="GuiResourceData"/>
-<property name="round.v, 30, 144" value="1" type="GuiResourceData"/>
-<property name="round.v, 300, 498" value="1" type="GuiResourceData"/>
-<property name="round.v, 302, 388" value="1" type="GuiResourceData"/>
-<property name="round.v, 303, 498" value="1" type="GuiResourceData"/>
-<property name="round.v, 304, 247" value="1" type="GuiResourceData"/>
-<property name="round.v, 304, 502" value="1" type="GuiResourceData"/>
-<property name="round.v, 306, 310" value="1" type="GuiResourceData"/>
-<property name="round.v, 307, 505" value="1" type="GuiResourceData"/>
-<property name="round.v, 317, 341" value="1" type="GuiResourceData"/>
-<property name="round.v, 319, 395" value="1" type="GuiResourceData"/>
-<property name="round.v, 319, 421" value="1" type="GuiResourceData"/>
-<property name="round.v, 325, 539" value="1" type="GuiResourceData"/>
-<property name="round.v, 326, 298" value="1" type="GuiResourceData"/>
-<property name="round.v, 329, 250" value="1" type="GuiResourceData"/>
-<property name="round.v, 33, 450" value="1" type="GuiResourceData"/>
-<property name="round.v, 33, 450, false, false, false, false, true" value="1" type="GuiResourceData"/>
-<property name="round.v, 33, 489" value="1" type="GuiResourceData"/>
-<property name="round.v, 330, 177" value="1" type="GuiResourceData"/>
-<property name="round.v, 335, 304" value="1" type="GuiResourceData"/>
-<property name="round.v, 336, 283" value="1" type="GuiResourceData"/>
-<property name="round.v, 339, 463" value="1" type="GuiResourceData"/>
-<property name="round.v, 340, 181" value="1" type="GuiResourceData"/>
-<property name="round.v, 341, 336" value="1" type="GuiResourceData"/>
-<property name="round.v, 345, 482" value="1" type="GuiResourceData"/>
-<property name="round.v, 347, 301" value="1" type="GuiResourceData"/>
-<property name="round.v, 358, 250" value="1" type="GuiResourceData"/>
-<property name="round.v, 362, 412" value="1" type="GuiResourceData"/>
-<property name="round.v, 364, 322" value="1" type="GuiResourceData"/>
-<property name="round.v, 364, 378" value="1" type="GuiResourceData"/>
-<property name="round.v, 367, 420" value="1" type="GuiResourceData"/>
-<property name="round.v, 377, 523" value="1" type="GuiResourceData"/>
-<property name="round.v, 389, 419" value="1" type="GuiResourceData"/>
-<property name="round.v, 396, 432" value="1" type="GuiResourceData"/>
-<property name="round.v, 40, 481" value="1" type="GuiResourceData"/>
-<property name="round.v, 400, 282" value="1" type="GuiResourceData"/>
-<property name="round.v, 401, 422" value="1" type="GuiResourceData"/>
-<property name="round.v, 414, 362" value="1" type="GuiResourceData"/>
-<property name="round.v, 43, 334" value="1" type="GuiResourceData"/>
-<property name="round.v, 455, 246" value="1" type="GuiResourceData"/>
-<property name="round.v, 46, 463, false, false, false, false, true" value="1" type="GuiResourceData"/>
-<property name="round.v, 468, 335" value="1" type="GuiResourceData"/>
-<property name="round.v, 471, 425" value="1" type="GuiResourceData"/>
-<property name="round.v, 479, 523" value="1" type="GuiResourceData"/>
-<property name="round.v, 48, 461" value="1" type="GuiResourceData"/>
-<property name="round.v, 49, 215" value="1" type="GuiResourceData"/>
-<property name="round.v, 493, 453" value="1" type="GuiResourceData"/>
-<property name="round.v, 494, 397" value="1" type="GuiResourceData"/>
-<property name="round.v, 51, 261" value="1" type="GuiResourceData"/>
-<property name="round.v, 51, 261, false, false, false, false, true" value="1" type="GuiResourceData"/>
-<property name="round.v, 54, 282" value="1" type="GuiResourceData"/>
-<property name="round.v, 54, 336" value="1" type="GuiResourceData"/>
-<property name="round.v, 551, 469" value="1" type="GuiResourceData"/>
-<property name="round.v, 56, 111" value="1" type="GuiResourceData"/>
-<property name="round.v, 562, 475" value="1" type="GuiResourceData"/>
-<property name="round.v, 566, 492" value="1" type="GuiResourceData"/>
-<property name="round.v, 58, 297" value="1" type="GuiResourceData"/>
-<property name="round.v, 58, 367" value="1" type="GuiResourceData"/>
-<property name="round.v, 58, 450" value="1" type="GuiResourceData"/>
-<property name="round.v, 580, 465" value="1" type="GuiResourceData"/>
-<property name="round.v, 60, 416" value="1" type="GuiResourceData"/>
-<property name="round.v, 60, 416, false, false, false, false, true" value="1" type="GuiResourceData"/>
-<property name="round.v, 62, 95" value="1" type="GuiResourceData"/>
-<property name="round.v, 64, 261" value="1" type="GuiResourceData"/>
-<property name="round.v, 66, 204" value="1" type="GuiResourceData"/>
-<property name="round.v, 66, 321" value="1" type="GuiResourceData"/>
-<property name="round.v, 68, 417" value="1" type="GuiResourceData"/>
-<property name="round.v, 69, 205" value="1" type="GuiResourceData"/>
-<property name="round.v, 69, 207, false, false, false, false, true" value="1" type="GuiResourceData"/>
-<property name="round.v, 69, 331" value="1" type="GuiResourceData"/>
-<property name="round.v, 70, 346" value="1" type="GuiResourceData"/>
-<property name="round.v, 70, 504" value="1" type="GuiResourceData"/>
-<property name="round.v, 709, 322" value="1" type="GuiResourceData"/>
-<property name="round.v, 72, 141" value="1" type="GuiResourceData"/>
-<property name="round.v, 72, 141, false, false, false, false, true" value="1" type="GuiResourceData"/>
-<property name="round.v, 72, 78" value="1" type="GuiResourceData"/>
-<property name="round.v, 73, 268" value="1" type="GuiResourceData"/>
-<property name="round.v, 73, 268, false, false, false, false, true" value="1" type="GuiResourceData"/>
-<property name="round.v, 73, 514" value="1" type="GuiResourceData"/>
-<property name="round.v, 75, 348" value="1" type="GuiResourceData"/>
-<property name="round.v, 75, 412" value="1" type="GuiResourceData"/>
-<property name="round.v, 77, 395" value="1" type="GuiResourceData"/>
-<property name="round.v, 78, 567" value="1" type="GuiResourceData"/>
-<property name="round.v, 79, 127" value="1" type="GuiResourceData"/>
-<property name="round.v, 80, 127, false, false, false, false, true" value="1" type="GuiResourceData"/>
-<property name="round.v, 81, 197" value="1" type="GuiResourceData"/>
-<property name="round.v, 81, 540" value="1" type="GuiResourceData"/>
-<property name="round.v, 82, 127" value="1" type="GuiResourceData"/>
-<property name="round.v, 83, 268" value="1" type="GuiResourceData"/>
-<property name="round.v, 833, 508" value="1" type="GuiResourceData"/>
-<property name="round.v, 84, 562" value="1" type="GuiResourceData"/>
-<property name="round.v, 89, 281" value="1" type="GuiResourceData"/>
-<property name="round.v, 92, 328" value="1" type="GuiResourceData"/>
-<property name="round.v, 93, 515" value="1" type="GuiResourceData"/>
-<property name="round.v, 974, 322" value="1" type="GuiResourceData"/>
+<property name="PAResourceEtoH.FlowNavigatorTreePanel_FLOW_NAVIGATOR_TREE, [, Synthesis, Run Synthesis], 17, false" value="1" type="GuiResourceData"/>
+<property name="RDIResource.BaseDialog_OK, OK" value="1" type="GuiResourceData"/>
+<property name="clock.v, 47, 350" value="1" type="GuiResourceData"/>
 </item>
 <item name="Other">
 <property name="GuiMode" value="10" type="GuiMode"/>
 <property name="BatchMode" value="0" type="BatchMode"/>
-<property name="TclMode" value="9" type="TclMode"/>
+<property name="TclMode" value="7" type="TclMode"/>
 </item>
 </section>
 </application>

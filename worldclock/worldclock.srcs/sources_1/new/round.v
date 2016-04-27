@@ -21,10 +21,12 @@
 
 
 module bcpin(
+        input refFreq,
         input [7:0] hour,
         input [7:0] minute,
+        output reg [7:0] JA,
         output reg [7:0] JB,
-        output reg [7:0] JC        
+        output reg [7:0] JC       
     );
     
     //LED MATRIX
@@ -40,45 +42,84 @@ module bcpin(
     //I - T E N S I X - - - -
     //J - - - - O - C L O C K       
     
-    //ROWS                     COLUMNS 
-    //JA[0] = A  JB[0] = I     JC[0] = 1  JB[3] = 9      
-    //JA[1] = B  JB[1] = J     JC[1] = 2  JB[4] = 10
-    //JA[2] = C                JC[2] = 3  JB[5] = 11 
-    //JA[3] = D                JC[3] = 4 
-    //JA[4] = E                JC[4] = 5 
-    //JA[5] = F                JC[5] = 6 
-    //JA[6] = G                JC[6] = 7 
-    //JA[7] = H                JC[7] = 8 
-    
-    //**CYCLE THROUGH ROWS, HAVE 10 DIFFERENT COLUMN ARRAYS** ROWS SHOULD BE GROUND
-                   
+    //JA[0] = IT_IS            JC[0] = FOUR    JB[0] = SEVEN      
+    //JA[1] = HALF             JC[1] = FIVE    JB[1] = EIGHT
+    //JA[2] = TEN              JC[2] = TWO     JB[2] = TEN 
+    //JA[3] = QUARTER          JC[3] = NINE    JB[3] = SIX
+    //JA[4] = TWENTY           JC[4] = THREE   JB[4] = O_CLOCK
+    //JA[5] = FIVE             JC[5] = TWELVE 
+    //JA[6] = TO               JC[6] = ELEVEN 
+    //JA[7] = PAST             JC[7] = ONE
+        
     //rounded min to 5 minutes
-    integer res_min = ($bitstoreal(minute) / 5);
-    integer rnd_min = res_min * 5;
+    integer res_hour;
+    integer res_min;
+    integer rnd_min;
     
-    always @(*) begin
-        //reset the board
+    integer i;
+    
+    always @(posedge refFreq) begin
+        res_hour = $bitstoreal(hour);
+        res_min = ($bitstoreal(minute) / 5);
+        rnd_min = res_min * 5;
+        //reset the row data
+        JA <= 0;
         JB <= 0;
         JC <= 0;
         
-        //set IT IS
-        JC[0] = 1;
-        JC[1] = 1;
-        JC[3] = 1;
-        JC[4] = 1;
-    
-        if(rnd_min <= 30) begin 
-            
-        end else if(rnd_min > 30) begin
-               
-        end       
+        //activate IT IS
+        JA[0] <= 1;
         
-        //check what should be used
-        case(rnd_min)
-            5: begin JC[7] = 1; JB[3] = 1; JB[4] = 1; JB[5] = 1; end         
-            default: begin //0,60
-                JC[6] = 1; JC[7] = 1; JB[3] = 1; JB[4] = 1; JB[5] = 1;
-            end  
-        endcase
+        //check whether past or to
+        if(rnd_min <= 30) begin
+            JA[7] <= 1;
+        end else if(rnd_min > 30) begin
+            JA[6] <= 1;
+        end      
+        
+        //check what minutes should be used
+        if(rnd_min == 5 || rnd_min == 55) begin 
+            JA[5] <= 1;
+        end else if(rnd_min == 10 || rnd_min == 50) begin
+            JA[2] <= 1;
+        end else if(rnd_min == 15 || rnd_min == 45) begin
+            JA[3] <= 1;
+        end else if(rnd_min == 20 || rnd_min == 40) begin
+            JA[4] <= 1;
+        end else if(rnd_min == 25 || rnd_min == 35) begin
+            JA[4] <= 1;
+            JA[5] <= 1;
+        end else if(rnd_min == 30) begin
+            JA[1] <= 1;
+        end else begin //top of the hour
+            JB[4] <= 1;
+        end
+        
+        //check hour
+        if(res_hour == 0) begin 
+            JC[5] <= 1;
+        end else if(res_hour == 1 || res_hour == 13) begin
+            JC[7] <= 1;
+        end else if(res_hour == 2 || res_hour == 14) begin
+            JC[2] <= 1;
+        end else if(res_hour == 3 || res_hour == 15) begin
+            JC[4] <= 1;
+        end else if(res_hour == 4 || res_hour == 16) begin
+            JC[0] <= 1;
+        end else if(res_hour == 5 || res_hour == 17) begin
+            JC[1] <= 1;
+        end else if(res_hour == 6 || res_hour == 18) begin
+            JB[3] <= 1;
+        end else if(res_hour == 7 || res_hour == 19) begin 
+            JB[0] <= 1;
+        end else if(res_hour == 8 || res_hour == 20) begin
+            JB[1] <= 1;          
+        end else if(res_hour == 9 || res_hour == 21) begin
+            JC[3] <= 1;
+        end else if(res_hour == 10 || res_hour == 22) begin
+            JB[2] <= 1;
+        end else begin //hour 11
+            JC[6] <= 1;
+        end   
     end    
 endmodule
