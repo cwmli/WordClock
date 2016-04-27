@@ -50,18 +50,35 @@ module bcpin(
     //JA[5] = FIVE             JC[5] = TWELVE 
     //JA[6] = TO               JC[6] = ELEVEN 
     //JA[7] = PAST             JC[7] = ONE
-        
-    //rounded min to 5 minutes
+                
     integer res_hour;
-    integer res_min;
     integer rnd_min;
+    reg [3:0] ones;
     
     integer i;
     
     always @(posedge refFreq) begin
-        res_hour = $bitstoreal(hour);
-        res_min = ($bitstoreal(minute) / 5);
-        rnd_min = res_min * 5;
+        //convert bin to int
+        res_hour = hour;
+        rnd_min = minute;
+        //simple rounding
+        ones = 4'd0;       
+        for(i = 7; i >= 0; i = i - 1) begin
+            if(ones >= 5)
+                ones = ones + 3;
+            ones = ones << 1;
+            ones[0] = minute[i];
+        end
+        //6789 & 1234
+        if(ones == 4 || ones == 9)
+            rnd_min = rnd_min + 1;
+        else if(ones == 3 || ones == 8)
+            rnd_min = rnd_min + 2;
+        else if(ones == 2 || ones == 7)
+            rnd_min = rnd_min - 2;
+        else //ones == 6 or 1
+            rnd_min = rnd_min - 1; 
+        
         //reset the row data
         JA <= 0;
         JB <= 0;
