@@ -25,16 +25,22 @@ module ledtimer(
         input [0:0] sw,
         output reg [15:0] led
     );
-    
+        
     integer i = 0;
+    integer x;
     
     always @(posedge secFreq) begin
         if(sw[0]) begin
-            if (led[i] == 1)
-                led[i] <= 0;
-            else
-                led[i] <= 1;
+            //shift leds
+            for(x = 0; x < 15; x = x + 1) begin
+                led[x + 1] <= led[x];
+            end
+            led[0] <= 0;
+            
+            if(i % 4 != 0)
+               led[0] <= 1;
             i = i + 1;
+            
             if(i > 15)
                 i <= 0;
         end else begin
