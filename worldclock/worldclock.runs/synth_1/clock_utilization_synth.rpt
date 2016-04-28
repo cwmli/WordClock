@@ -1,8 +1,8 @@
 Copyright 1986-2016 Xilinx, Inc. All Rights Reserved.
 -----------------------------------------------------------------------------------------------------
 | Tool Version : Vivado v.2016.1 (win64) Build 1538259 Fri Apr  8 15:45:27 MDT 2016
-| Date         : Wed Apr 27 16:49:39 2016
-| Host         : Calvin-PC running 64-bit major release  (build 9200)
+| Date         : Thu Apr 28 08:57:23 2016
+| Host         : Turtle-PC running 64-bit major release  (build 9200)
 | Command      : report_utilization -file clock_utilization_synth.rpt -pb clock_utilization_synth.pb
 | Design       : clock
 | Device       : 7a35tcpg236-1
@@ -30,13 +30,13 @@ Table of Contents
 +-------------------------+------+-------+-----------+-------+
 |        Site Type        | Used | Fixed | Available | Util% |
 +-------------------------+------+-------+-----------+-------+
-| Slice LUTs*             |  395 |     0 |     20800 |  1.90 |
-|   LUT as Logic          |  395 |     0 |     20800 |  1.90 |
+| Slice LUTs*             |  289 |     0 |     20800 |  1.39 |
+|   LUT as Logic          |  289 |     0 |     20800 |  1.39 |
 |   LUT as Memory         |    0 |     0 |      9600 |  0.00 |
 | Slice Registers         |  126 |     0 |     41600 |  0.30 |
 |   Register as Flip Flop |  126 |     0 |     41600 |  0.30 |
 |   Register as Latch     |    0 |     0 |     41600 |  0.00 |
-| F7 Muxes                |    2 |     0 |     16300 |  0.01 |
+| F7 Muxes                |    1 |     0 |     16300 | <0.01 |
 | F8 Muxes                |    0 |     0 |      8150 |  0.00 |
 +-------------------------+------+-------+-----------+-------+
 * Warning! The Final LUT count, after physical optimizations and full implementation, is typically lower. Run opt_design after synthesis, if not already completed, for a more realistic count.
@@ -149,19 +149,19 @@ Table of Contents
 +----------+------+---------------------+
 | Ref Name | Used | Functional Category |
 +----------+------+---------------------+
-| LUT4     |  137 |                 LUT |
-| LUT6     |   91 |                 LUT |
-| CARRY4   |   74 |          CarryLogic |
-| LUT5     |   71 |                 LUT |
+| LUT5     |  115 |                 LUT |
+| LUT6     |   98 |                 LUT |
 | FDRE     |   69 |        Flop & Latch |
-| LUT3     |   65 |                 LUT |
 | FDCE     |   57 |        Flop & Latch |
-| LUT2     |   42 |                 LUT |
+| LUT4     |   55 |                 LUT |
+| CARRY4   |   48 |          CarryLogic |
 | OBUF     |   36 |                  IO |
-| LUT1     |   22 |                 LUT |
+| LUT3     |   25 |                 LUT |
+| LUT2     |   24 |                 LUT |
+| LUT1     |    8 |                 LUT |
 | IBUF     |    4 |                  IO |
-| MUXF7    |    2 |               MuxFx |
 | BUFG     |    2 |               Clock |
+| MUXF7    |    1 |               MuxFx |
 +----------+------+---------------------+
 
 

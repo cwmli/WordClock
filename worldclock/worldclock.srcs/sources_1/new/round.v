@@ -70,7 +70,9 @@ module bcpin(
             ones[0] = minute[i];
         end
         //6789 & 1234
-        if(ones == 4 || ones == 9)
+        if(ones == 5 || ones == 0)
+            rnd_min = rnd_min;
+        else if(ones == 4 || ones == 9)
             rnd_min = rnd_min + 1;
         else if(ones == 3 || ones == 8)
             rnd_min = rnd_min + 2;
@@ -92,6 +94,7 @@ module bcpin(
             JA[7] <= 1;
         end else if(rnd_min > 30) begin
             JA[6] <= 1;
+            res_hour = res_hour + 1;
         end      
         
         //check what minutes should be used
