@@ -37,11 +37,11 @@ module ledtimer(
             end
             led[0] <= 0;
             
-            if(i % 4 != 0)
+            if(i < 4)
                led[0] <= 1;
             i = i + 1;
             
-            if(i > 15)
+            if(i > 7)
                 i <= 0;
         end else begin
             led[15:0] <= 0;

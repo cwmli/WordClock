@@ -50,7 +50,7 @@ set rc [catch {
   create_msg_db write_bitstream.pb
   set_param xicom.use_bs_reader 1
   open_checkpoint clock_routed.dcp
-  set_property webtalk.parent_dir C:/Users/Turtle/Documents/GitHub/WordClock/worldclock/worldclock.cache/wt [current_project]
+  set_property webtalk.parent_dir C:/Users/Calvin/Documents/GitHub/WordClock/worldclock/worldclock.cache/wt [current_project]
   catch { write_mem_info -force clock.mmi }
   write_bitstream -force clock.bit 
   catch { write_sysdef -hwdef clock.hwdef -bitfile clock.bit -meminfo clock.mmi -file clock.sysdef }
