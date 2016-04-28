@@ -15,6 +15,7 @@ set_property parent.project_path C:/Users/Turtle/Documents/GitHub/WordClock/worl
 set_property default_lib xil_defaultlib [current_project]
 set_property target_language Verilog [current_project]
 read_verilog -library xil_defaultlib {
+  C:/Users/Turtle/Documents/GitHub/WordClock/worldclock/worldclock.srcs/sources_1/new/ledtimer.v
   C:/Users/Turtle/Documents/GitHub/WordClock/worldclock/worldclock.srcs/sources_1/new/round.v
   C:/Users/Turtle/Documents/GitHub/WordClock/worldclock/worldclock.srcs/sources_1/new/counter.v
   C:/Users/Turtle/Documents/GitHub/WordClock/worldclock/worldclock.srcs/sources_1/new/refreshTimer.v

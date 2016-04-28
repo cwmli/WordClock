@@ -25,6 +25,8 @@ module clock(
         input btnC,
         input btnL,
         input btnR,
+        input [0:0] sw,
+        output [15:0] led,
         output [7:0] JA,
         output [7:0] JB,
         output [7:0] JC,
@@ -54,8 +56,11 @@ module clock(
     secondsTimer secTimer(clk, btnC, seconds_clk);
     refreshTimer refTimer(clk, 1'b0, digit_refclk);
         
+        
     counter timeCounter(seconds_clk, btnC, btnL, btnR, hour, minute); 
     bcd bin2digit(hour, minute, an4, an3, an2, an1);
+    
+    ledtimer ledsec(seconds_clk, sw, led);
     
     digits sevenSeg(digit_refclk, seconds_clk, an1, an2, an3, an4, seg, an, dp);
     
