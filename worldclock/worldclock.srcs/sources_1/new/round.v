@@ -42,14 +42,14 @@ module bcpin(
     //I - T E N S I X - - - -
     //J - - - - O - C L O C K       
     
-    //JA[0] = IT_IS            JC[0] = FOUR    JB[0] = SEVEN      
-    //JA[1] = HALF             JC[1] = FIVE    JB[1] = EIGHT
-    //JA[2] = TEN              JC[2] = TWO     JB[2] = TEN 
-    //JA[3] = QUARTER          JC[3] = NINE    JB[3] = SIX
-    //JA[4] = TWENTY           JC[4] = THREE   JB[4] = O_CLOCK
-    //JA[5] = FIVE             JC[5] = TWELVE 
-    //JA[6] = TO               JC[6] = ELEVEN 
-    //JA[7] = PAST             JC[7] = ONE
+    //JA1 - JA[0] = IT_IS            JC1 - JC[0] = FOUR    JB1 - JB[0] = SEVEN      
+    //JA2 - JA[1] = HALF             JC2 - JC[1] = FIVE    JB2 - JB[1] = EIGHT
+    //JA3 - JA[2] = TEN              JC3 - JC[2] = TWO     JB3 - JB[2] = TEN 
+    //JA4 - JA[3] = QUARTER          JC4 - JC[3] = NINE    JB4 - JB[3] = SIX
+    //JA7 - JA[4] = TWENTY           JC7 - JC[4] = THREE   JB7 - JB[4] = O_CLOCK
+    //JA8 - JA[5] = FIVE             JC8 - JC[5] = TWELVE 
+    //JA9 - JA[6] = TO               JC9 - JC[6] = ELEVEN 
+    //JA10 - JA[7] = PAST            JC10 - JC[7] = ONE
                 
     integer res_hour;
     integer rnd_min;
