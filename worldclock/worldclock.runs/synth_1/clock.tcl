@@ -3,6 +3,7 @@
 # 
 
 set_param xicom.use_bs_reader 1
+set_msg_config -id {Common 17-41} -limit 10000000
 set_msg_config -id {HDL 9-1061} -limit 100000
 set_msg_config -id {HDL 9-1654} -limit 100000
 create_project -in_memory -part xc7a35tcpg236-1
@@ -15,6 +16,7 @@ set_property parent.project_path C:/Users/Calvin/Documents/GitHub/WordClock/worl
 set_property default_lib xil_defaultlib [current_project]
 set_property target_language Verilog [current_project]
 read_verilog -library xil_defaultlib {
+  C:/Users/Calvin/Documents/GitHub/WordClock/worldclock/worldclock.srcs/sources_1/new/debouncer.v
   C:/Users/Calvin/Documents/GitHub/WordClock/worldclock/worldclock.srcs/sources_1/new/ledtimer.v
   C:/Users/Calvin/Documents/GitHub/WordClock/worldclock/worldclock.srcs/sources_1/new/round.v
   C:/Users/Calvin/Documents/GitHub/WordClock/worldclock/worldclock.srcs/sources_1/new/counter.v

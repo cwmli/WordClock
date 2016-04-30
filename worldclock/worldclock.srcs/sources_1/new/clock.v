@@ -40,9 +40,9 @@ module clock(
     
     wire [7:0] hour;
     wire [7:0] minute;
-    
-    //Pmod port pins
-    wire [7:0] pins [9:0];
+        
+    wire db_btnL;
+    wire db_btnR;
          
     //segment displays
     // 4 3 : 2 1
@@ -54,10 +54,12 @@ module clock(
     wire [7:0] an4;
         
     secondsTimer secTimer(clk, btnC, seconds_clk);
-    refreshTimer refTimer(clk, 1'b0, digit_refclk);
+    refreshTimer refTimer(clk, 1'b0, digit_refclk);  
+    
+    debouncer dbbtnL(clk, btnL, db_btnL); 
+    debouncer dbbtnR(clk, btnR, db_btnR);
         
-        
-    counter timeCounter(seconds_clk, btnC, btnL, btnR, hour, minute); 
+    counter timeCounter(clk, seconds_clk, btnC, db_btnL, db_btnR, hour, minute); 
     bcd bin2digit(hour, minute, an4, an3, an2, an1);
     
     ledtimer ledsec(seconds_clk, sw, led);

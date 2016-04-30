@@ -1,0 +1,18 @@
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/Calvin/Documents/GitHub/WordClock/worldclock/worldclock.srcs/sources_1/new/ledtimer.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module ledtimer
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/Calvin/Documents/GitHub/WordClock/worldclock/worldclock.srcs/sources_1/new/round.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module bcpin
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/Calvin/Documents/GitHub/WordClock/worldclock/worldclock.srcs/sources_1/new/counter.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module counter
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/Calvin/Documents/GitHub/WordClock/worldclock/worldclock.srcs/sources_1/new/refreshTimer.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module refreshTimer
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/Calvin/Documents/GitHub/WordClock/worldclock/worldclock.srcs/sources_1/new/bcd.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module bcd
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/Calvin/Documents/GitHub/WordClock/worldclock/worldclock.srcs/sources_1/new/divider.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module secondsTimer
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/Calvin/Documents/GitHub/WordClock/worldclock/worldclock.srcs/sources_1/new/digits.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module digits
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/Calvin/Documents/GitHub/WordClock/worldclock/worldclock.srcs/sources_1/new/clock.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module clock
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/Calvin/Documents/GitHub/WordClock/worldclock/worldclock.sim/sim_1/behav/glbl.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module glbl

@@ -1,7 +1,7 @@
 Copyright 1986-2016 Xilinx, Inc. All Rights Reserved.
 ------------------------------------------------------------------------------------
 | Tool Version : Vivado v.2016.1 (win64) Build 1538259 Fri Apr  8 15:45:27 MDT 2016
-| Date         : Thu Apr 28 16:25:14 2016
+| Date         : Sat Apr 30 19:25:04 2016
 | Host         : Calvin-PC running 64-bit major release  (build 9200)
 | Command      : report_control_sets -verbose -file clock_control_sets_placed.rpt
 | Design       : clock
@@ -22,8 +22,8 @@ Table of Contents
 +----------------------------------------------------------+-------+
 |                          Status                          | Count |
 +----------------------------------------------------------+-------+
-| Number of unique control sets                            |    14 |
-| Unused register locations in slices containing registers |    42 |
+| Number of unique control sets                            |    62 |
+| Unused register locations in slices containing registers |   374 |
 +----------------------------------------------------------+-------+
 
 
@@ -33,11 +33,11 @@ Table of Contents
 +--------------+-----------------------+------------------------+-----------------+--------------+
 | Clock Enable | Synchronous Set/Reset | Asynchronous Set/Reset | Total Registers | Total Slices |
 +--------------+-----------------------+------------------------+-----------------+--------------+
-| No           | No                    | No                     |              23 |           17 |
-| No           | No                    | Yes                    |              41 |           17 |
-| No           | Yes                   | No                     |              82 |           25 |
-| Yes          | No                    | No                     |              12 |            6 |
-| Yes          | No                    | Yes                    |              16 |            7 |
+| No           | No                    | No                     |              59 |           23 |
+| No           | No                    | Yes                    |              57 |           33 |
+| No           | Yes                   | No                     |              98 |           41 |
+| Yes          | No                    | No                     |              28 |           13 |
+| Yes          | No                    | Yes                    |              16 |           16 |
 | Yes          | Yes                   | No                     |               0 |            0 |
 +--------------+-----------------------+------------------------+-----------------+--------------+
 
@@ -45,23 +45,71 @@ Table of Contents
 3. Detailed Control Set Information
 -----------------------------------
 
-+--------------------+---------------------------+------------------------+------------------+----------------+
-|    Clock Signal    |       Enable Signal       |    Set/Reset Signal    | Slice Load Count | Bel Load Count |
-+--------------------+---------------------------+------------------------+------------------+----------------+
-|  digit_refclk_BUFG | sevenSeg/dp_i_1_n_0       |                        |                1 |              1 |
-|  seconds_clk_BUFG  |                           |                        |                1 |              1 |
-|  clk_IBUF_BUFG     |                           |                        |                2 |              2 |
-|  digit_refclk_BUFG |                           | timeCounter/JC[5]      |                2 |              4 |
-|  digit_refclk_BUFG | sevenSeg/anm[3]_i_1_n_0   |                        |                1 |              4 |
-|  digit_refclk_BUFG | sevenSeg/segm[6]_i_1_n_0  |                        |                4 |              7 |
-|  seconds_clk_BUFG  |                           | btnC_IBUF              |                3 |              8 |
-|  seconds_clk_BUFG  | timeCounter/hr[7]_i_1_n_0 | btnC_IBUF              |                4 |              8 |
-|  seconds_clk_BUFG  | timeCounter/min_1         | btnC_IBUF              |                3 |              8 |
-|  seconds_clk_BUFG  |                           | ledsec/led[15]_i_1_n_0 |                7 |             15 |
-|  digit_refclk_BUFG |                           |                        |               14 |             20 |
-|  clk_IBUF_BUFG     |                           | refTimer/freq          |                8 |             31 |
-|  seconds_clk_BUFG  |                           | ledsec/i               |                8 |             32 |
-|  clk_IBUF_BUFG     |                           | btnC_IBUF              |               14 |             33 |
-+--------------------+---------------------------+------------------------+------------------+----------------+
++-------------------------------------+-----------------------------+------------------------------------+------------------+----------------+
+|             Clock Signal            |        Enable Signal        |          Set/Reset Signal          | Slice Load Count | Bel Load Count |
++-------------------------------------+-----------------------------+------------------------------------+------------------+----------------+
+|  timeCounter/hr_reg[0]_LDC_i_1_n_0  |                             | timeCounter/hr_reg[0]_LDC_i_2_n_0  |                1 |              1 |
+|  timeCounter/hr_reg[1]_LDC_i_1_n_0  |                             | timeCounter/hr_reg[1]_LDC_i_2_n_0  |                1 |              1 |
+|  timeCounter/hr_reg[2]_LDC_i_1_n_0  |                             | timeCounter/hr_reg[2]_LDC_i_2_n_0  |                1 |              1 |
+|  timeCounter/hr_reg[3]_LDC_i_1_n_0  |                             | timeCounter/hr_reg[3]_LDC_i_2_n_0  |                1 |              1 |
+|  timeCounter/hr_reg[4]_LDC_i_1_n_0  |                             | timeCounter/hr_reg[4]_LDC_i_2_n_0  |                1 |              1 |
+|  timeCounter/hr_reg[5]_LDC_i_1_n_0  |                             | timeCounter/hr_reg[5]_LDC_i_2_n_0  |                1 |              1 |
+|  timeCounter/hr_reg[6]_LDC_i_1_n_0  |                             | timeCounter/hr_reg[6]_LDC_i_2_n_0  |                1 |              1 |
+|  timeCounter/hr_reg[7]_LDC_i_1_n_0  |                             | timeCounter/hr_reg[7]_LDC_i_2_n_0  |                1 |              1 |
+|  timeCounter/min_reg[0]_LDC_i_1_n_0 |                             | timeCounter/min_reg[0]_LDC_i_2_n_0 |                1 |              1 |
+|  timeCounter/min_reg[1]_LDC_i_1_n_0 |                             | timeCounter/min_reg[1]_LDC_i_2_n_0 |                1 |              1 |
+|  timeCounter/min_reg[2]_LDC_i_1_n_0 |                             | timeCounter/min_reg[2]_LDC_i_2_n_0 |                1 |              1 |
+|  timeCounter/min_reg[3]_LDC_i_1_n_0 |                             | timeCounter/min_reg[3]_LDC_i_2_n_0 |                1 |              1 |
+|  timeCounter/min_reg[4]_LDC_i_1_n_0 |                             | timeCounter/min_reg[4]_LDC_i_2_n_0 |                1 |              1 |
+|  timeCounter/min_reg[5]_LDC_i_1_n_0 |                             | timeCounter/min_reg[5]_LDC_i_2_n_0 |                1 |              1 |
+|  timeCounter/min_reg[6]_LDC_i_1_n_0 |                             | timeCounter/min_reg[6]_LDC_i_2_n_0 |                1 |              1 |
+|  timeCounter/min_reg[7]_LDC_i_1_n_0 |                             | timeCounter/min_reg[7]_LDC_i_2_n_0 |                1 |              1 |
+|  seconds_clk_BUFG                   | timeCounter/hr[7]_P_i_1_n_0 | timeCounter/hr_reg[7]_LDC_i_1_n_0  |                1 |              1 |
+|  seconds_clk_BUFG                   | timeCounter/min_1           | timeCounter/min_reg[0]_LDC_i_1_n_0 |                1 |              1 |
+|  seconds_clk_BUFG                   | timeCounter/min_1           | timeCounter/min_reg[1]_LDC_i_1_n_0 |                1 |              1 |
+|  seconds_clk_BUFG                   | timeCounter/min_1           | timeCounter/min_reg[2]_LDC_i_1_n_0 |                1 |              1 |
+|  seconds_clk_BUFG                   | timeCounter/min_1           | timeCounter/min_reg[3]_LDC_i_1_n_0 |                1 |              1 |
+|  seconds_clk_BUFG                   | timeCounter/min_1           | timeCounter/min_reg[4]_LDC_i_1_n_0 |                1 |              1 |
+|  seconds_clk_BUFG                   | timeCounter/min_1           | timeCounter/min_reg[5]_LDC_i_1_n_0 |                1 |              1 |
+|  seconds_clk_BUFG                   | timeCounter/min_1           | timeCounter/min_reg[6]_LDC_i_1_n_0 |                1 |              1 |
+|  digit_refclk_BUFG                  | sevenSeg/dp_i_1_n_0         |                                    |                1 |              1 |
+|  seconds_clk_BUFG                   | timeCounter/min_1           | timeCounter/min_reg[7]_LDC_i_1_n_0 |                1 |              1 |
+|  seconds_clk_BUFG                   |                             |                                    |                1 |              1 |
+|  seconds_clk_BUFG                   |                             | timeCounter/hr_reg[0]_LDC_i_2_n_0  |                1 |              1 |
+|  seconds_clk_BUFG                   |                             | timeCounter/hr_reg[1]_LDC_i_2_n_0  |                1 |              1 |
+|  seconds_clk_BUFG                   |                             | timeCounter/hr_reg[2]_LDC_i_2_n_0  |                1 |              1 |
+|  seconds_clk_BUFG                   |                             | timeCounter/hr_reg[3]_LDC_i_2_n_0  |                1 |              1 |
+|  seconds_clk_BUFG                   |                             | timeCounter/hr_reg[4]_LDC_i_2_n_0  |                1 |              1 |
+|  seconds_clk_BUFG                   |                             | timeCounter/hr_reg[5]_LDC_i_2_n_0  |                1 |              1 |
+|  seconds_clk_BUFG                   |                             | timeCounter/hr_reg[6]_LDC_i_2_n_0  |                1 |              1 |
+|  seconds_clk_BUFG                   |                             | timeCounter/hr_reg[7]_LDC_i_2_n_0  |                1 |              1 |
+|  seconds_clk_BUFG                   |                             | timeCounter/min_reg[0]_LDC_i_2_n_0 |                1 |              1 |
+|  seconds_clk_BUFG                   |                             | timeCounter/min_reg[1]_LDC_i_2_n_0 |                1 |              1 |
+|  seconds_clk_BUFG                   |                             | timeCounter/min_reg[2]_LDC_i_2_n_0 |                1 |              1 |
+|  seconds_clk_BUFG                   |                             | timeCounter/min_reg[3]_LDC_i_2_n_0 |                1 |              1 |
+|  seconds_clk_BUFG                   |                             | timeCounter/min_reg[4]_LDC_i_2_n_0 |                1 |              1 |
+|  seconds_clk_BUFG                   |                             | timeCounter/min_reg[5]_LDC_i_2_n_0 |                1 |              1 |
+|  seconds_clk_BUFG                   |                             | timeCounter/min_reg[6]_LDC_i_2_n_0 |                1 |              1 |
+|  seconds_clk_BUFG                   |                             | timeCounter/min_reg[7]_LDC_i_2_n_0 |                1 |              1 |
+|  seconds_clk_BUFG                   | timeCounter/hr[7]_P_i_1_n_0 | timeCounter/hr_reg[0]_LDC_i_1_n_0  |                1 |              1 |
+|  seconds_clk_BUFG                   | timeCounter/hr[7]_P_i_1_n_0 | timeCounter/hr_reg[1]_LDC_i_1_n_0  |                1 |              1 |
+|  seconds_clk_BUFG                   | timeCounter/hr[7]_P_i_1_n_0 | timeCounter/hr_reg[2]_LDC_i_1_n_0  |                1 |              1 |
+|  seconds_clk_BUFG                   | timeCounter/hr[7]_P_i_1_n_0 | timeCounter/hr_reg[3]_LDC_i_1_n_0  |                1 |              1 |
+|  seconds_clk_BUFG                   | timeCounter/hr[7]_P_i_1_n_0 | timeCounter/hr_reg[4]_LDC_i_1_n_0  |                1 |              1 |
+|  seconds_clk_BUFG                   | timeCounter/hr[7]_P_i_1_n_0 | timeCounter/hr_reg[5]_LDC_i_1_n_0  |                1 |              1 |
+|  seconds_clk_BUFG                   | timeCounter/hr[7]_P_i_1_n_0 | timeCounter/hr_reg[6]_LDC_i_1_n_0  |                1 |              1 |
+|  digit_refclk_BUFG                  |                             | timeCounter/JC[5]                  |                2 |              4 |
+|  digit_refclk_BUFG                  | sevenSeg/anm[3]_i_1_n_0     |                                    |                1 |              4 |
+|  digit_refclk_BUFG                  | sevenSeg/segm[6]_i_1_n_0    |                                    |                4 |              7 |
+|  clk_IBUF_BUFG                      | timeCounter/umin[7]_i_1_n_0 |                                    |                4 |              8 |
+|  clk_IBUF_BUFG                      | dbbtnR/E[0]                 |                                    |                3 |              8 |
+|  seconds_clk_BUFG                   |                             | btnC_IBUF                          |                3 |              8 |
+|  seconds_clk_BUFG                   |                             | ledsec/led[15]_i_1_n_0             |                7 |             15 |
+|  digit_refclk_BUFG                  |                             |                                    |               11 |             20 |
+|  clk_IBUF_BUFG                      |                             | refTimer/freq                      |                8 |             31 |
+|  seconds_clk_BUFG                   |                             | ledsec/i                           |                8 |             32 |
+|  clk_IBUF_BUFG                      |                             | btnC_IBUF                          |               14 |             33 |
+|  clk_IBUF_BUFG                      |                             |                                    |               11 |             38 |
++-------------------------------------+-----------------------------+------------------------------------+------------------+----------------+
 
 
