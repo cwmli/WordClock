@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<GenRun Id="impl_1" LaunchPart="xc7a35tcpg236-1" LaunchTime="1462058617">
+<GenRun Id="impl_1" LaunchPart="xc7a35tcpg236-1" LaunchTime="1464389745">
   <File Type="OPT-DCP" Name="clock_opt.dcp"/>
   <File Type="ROUTE-STATUS-PB" Name="clock_route_status.pb"/>
   <File Type="PA-TCL" Name="clock.tcl"/>
@@ -150,6 +150,8 @@
     <Step Id="phys_opt_design"/>
     <Step Id="route_design"/>
     <Step Id="post_route_phys_opt_design"/>
-    <Step Id="write_bitstream"/>
+    <Step Id="write_bitstream">
+      <Option Id="BinFile">1</Option>
+    </Step>
   </Strategy>
 </GenRun>
