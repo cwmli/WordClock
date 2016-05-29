@@ -22,7 +22,7 @@
 
 module ledtimer(
         input secFreq,
-        input [0:0] sw,
+        input sw,
         output reg [15:0] led
     );
         
@@ -30,7 +30,7 @@ module ledtimer(
     integer x;
     
     always @(posedge secFreq) begin
-        if(sw[0]) begin
+        if(sw) begin
             //shift leds
             for(x = 0; x < 15; x = x + 1) begin
                 led[x + 1] <= led[x];

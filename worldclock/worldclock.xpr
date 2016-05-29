@@ -10,12 +10,12 @@
     <Option Name="Part" Val="xc7a35tcpg236-1"/>
     <Option Name="CompiledLibDir" Val="$PCACHEDIR/compile_simlib"/>
     <Option Name="CompiledLibDirXSim" Val=""/>
-    <Option Name="CompiledLibDirModelSim" Val="$PPRDIR/../../../../AppData/AppData/AppData/AppData/AppData/AppData/AppData/AppData/AppData/AppData/AppData/AppData/AppData/Roaming/AppData/Turtle/Desktop/Basys3 Projects/worldclock/worldclock.cache/compile_simlib/modelsim"/>
-    <Option Name="CompiledLibDirQuesta" Val="$PPRDIR/../../../../AppData/AppData/AppData/AppData/AppData/AppData/AppData/AppData/AppData/AppData/AppData/AppData/AppData/Roaming/AppData/Turtle/Desktop/Basys3 Projects/worldclock/worldclock.cache/compile_simlib/questa"/>
-    <Option Name="CompiledLibDirIES" Val="$PPRDIR/../../../../AppData/AppData/AppData/AppData/AppData/AppData/AppData/AppData/AppData/AppData/AppData/AppData/AppData/Roaming/AppData/Turtle/Desktop/Basys3 Projects/worldclock/worldclock.cache/compile_simlib/ies"/>
-    <Option Name="CompiledLibDirVCS" Val="$PPRDIR/../../../../AppData/AppData/AppData/AppData/AppData/AppData/AppData/AppData/AppData/AppData/AppData/AppData/AppData/Roaming/AppData/Turtle/Desktop/Basys3 Projects/worldclock/worldclock.cache/compile_simlib/vcs"/>
-    <Option Name="CompiledLibDirRiviera" Val="$PPRDIR/../../../../AppData/AppData/AppData/AppData/AppData/AppData/AppData/AppData/AppData/AppData/AppData/AppData/AppData/Roaming/AppData/Turtle/Desktop/Basys3 Projects/worldclock/worldclock.cache/compile_simlib/riviera"/>
-    <Option Name="CompiledLibDirActivehdl" Val="$PPRDIR/../../../../AppData/AppData/AppData/AppData/AppData/AppData/AppData/AppData/AppData/AppData/AppData/AppData/AppData/Roaming/AppData/Turtle/Desktop/Basys3 Projects/worldclock/worldclock.cache/compile_simlib/activehdl"/>
+    <Option Name="CompiledLibDirModelSim" Val="$PPRDIR/../../../../AppData/AppData/AppData/AppData/AppData/AppData/AppData/AppData/AppData/AppData/AppData/AppData/AppData/AppData/AppData/Roaming/AppData/Turtle/Desktop/Basys3 Projects/worldclock/worldclock.cache/compile_simlib/modelsim"/>
+    <Option Name="CompiledLibDirQuesta" Val="$PPRDIR/../../../../AppData/AppData/AppData/AppData/AppData/AppData/AppData/AppData/AppData/AppData/AppData/AppData/AppData/AppData/AppData/Roaming/AppData/Turtle/Desktop/Basys3 Projects/worldclock/worldclock.cache/compile_simlib/questa"/>
+    <Option Name="CompiledLibDirIES" Val="$PPRDIR/../../../../AppData/AppData/AppData/AppData/AppData/AppData/AppData/AppData/AppData/AppData/AppData/AppData/AppData/AppData/AppData/Roaming/AppData/Turtle/Desktop/Basys3 Projects/worldclock/worldclock.cache/compile_simlib/ies"/>
+    <Option Name="CompiledLibDirVCS" Val="$PPRDIR/../../../../AppData/AppData/AppData/AppData/AppData/AppData/AppData/AppData/AppData/AppData/AppData/AppData/AppData/AppData/AppData/Roaming/AppData/Turtle/Desktop/Basys3 Projects/worldclock/worldclock.cache/compile_simlib/vcs"/>
+    <Option Name="CompiledLibDirRiviera" Val="$PPRDIR/../../../../AppData/AppData/AppData/AppData/AppData/AppData/AppData/AppData/AppData/AppData/AppData/AppData/AppData/AppData/AppData/Roaming/AppData/Turtle/Desktop/Basys3 Projects/worldclock/worldclock.cache/compile_simlib/riviera"/>
+    <Option Name="CompiledLibDirActivehdl" Val="$PPRDIR/../../../../AppData/AppData/AppData/AppData/AppData/AppData/AppData/AppData/AppData/AppData/AppData/AppData/AppData/AppData/AppData/Roaming/AppData/Turtle/Desktop/Basys3 Projects/worldclock/worldclock.cache/compile_simlib/activehdl"/>
     <Option Name="BoardPart" Val=""/>
     <Option Name="ActiveSimSet" Val="sim_1"/>
     <Option Name="DefaultLib" Val="xil_defaultlib"/>
@@ -43,21 +43,7 @@
   <FileSets Version="1" Minor="31">
     <FileSet Name="sources_1" Type="DesignSrcs" RelSrcDir="$PSRCDIR/sources_1">
       <Filter Type="Srcs"/>
-      <File Path="$PSRCDIR/sources_1/new/debouncer.v">
-        <FileInfo>
-          <Attr Name="UsedIn" Val="synthesis"/>
-          <Attr Name="UsedIn" Val="implementation"/>
-          <Attr Name="UsedIn" Val="simulation"/>
-        </FileInfo>
-      </File>
-      <File Path="$PSRCDIR/sources_1/new/ledtimer.v">
-        <FileInfo>
-          <Attr Name="UsedIn" Val="synthesis"/>
-          <Attr Name="UsedIn" Val="implementation"/>
-          <Attr Name="UsedIn" Val="simulation"/>
-        </FileInfo>
-      </File>
-      <File Path="$PSRCDIR/sources_1/new/round.v">
+      <File Path="$PSRCDIR/sources_1/new/ledpwm.v">
         <FileInfo>
           <Attr Name="UsedIn" Val="synthesis"/>
           <Attr Name="UsedIn" Val="implementation"/>
@@ -65,6 +51,20 @@
         </FileInfo>
       </File>
       <File Path="$PSRCDIR/sources_1/new/counter.v">
+        <FileInfo>
+          <Attr Name="UsedIn" Val="synthesis"/>
+          <Attr Name="UsedIn" Val="implementation"/>
+          <Attr Name="UsedIn" Val="simulation"/>
+        </FileInfo>
+      </File>
+      <File Path="$PSRCDIR/sources_1/new/debouncer.v">
+        <FileInfo>
+          <Attr Name="UsedIn" Val="synthesis"/>
+          <Attr Name="UsedIn" Val="implementation"/>
+          <Attr Name="UsedIn" Val="simulation"/>
+        </FileInfo>
+      </File>
+      <File Path="$PSRCDIR/sources_1/new/round.v">
         <FileInfo>
           <Attr Name="UsedIn" Val="synthesis"/>
           <Attr Name="UsedIn" Val="implementation"/>
@@ -101,6 +101,14 @@
       </File>
       <File Path="$PSRCDIR/sources_1/new/clock.v">
         <FileInfo>
+          <Attr Name="UsedIn" Val="synthesis"/>
+          <Attr Name="UsedIn" Val="implementation"/>
+          <Attr Name="UsedIn" Val="simulation"/>
+        </FileInfo>
+      </File>
+      <File Path="$PSRCDIR/sources_1/new/ledtimer.v">
+        <FileInfo>
+          <Attr Name="AutoDisabled" Val="1"/>
           <Attr Name="UsedIn" Val="synthesis"/>
           <Attr Name="UsedIn" Val="implementation"/>
           <Attr Name="UsedIn" Val="simulation"/>

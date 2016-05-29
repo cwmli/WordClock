@@ -22,10 +22,12 @@
 
 module clock(
         input clk,
-        input btnC,
         input btnL,
         input btnR,
-        input [0:0] sw,
+        input btnC,
+        input btnU,
+        input btnD,
+        input [2:0] sw,
         output [15:0] led,
         output [7:0] JA,
         output [7:0] JB,
@@ -43,6 +45,8 @@ module clock(
         
     wire db_btnL;
     wire db_btnR;
+    wire db_btnU;
+    wire db_btnD;
          
     //segment displays
     // 4 3 : 2 1
@@ -52,19 +56,26 @@ module clock(
     //hour
     wire [7:0] an3;
     wire [7:0] an4;
+    
+    //pin data
+    wire [7:0] j1;
+    wire [7:0] j2;
+    wire [7:0] j3;
         
-    secondsTimer secTimer(clk, btnC, seconds_clk);
+    secondsTimer secTimer(clk, sw[2], seconds_clk);
     refreshTimer refTimer(clk, 1'b0, digit_refclk);  
     
     debouncer dbbtnL(clk, btnL, db_btnL); 
     debouncer dbbtnR(clk, btnR, db_btnR);
+    debouncer dbbtnU(clk, btnU, db_btnU);
+    debouncer dbbtnD(clk, btnD, db_btnD);
         
-    counter timeCounter(clk, seconds_clk, btnC, db_btnL, db_btnR, hour, minute); 
+    counter timeCounter(clk, seconds_clk, btnC, sw[1], sw[2], db_btnL, db_btnR, hour, minute); 
     bcd bin2digit(hour, minute, an4, an3, an2, an1);
     
-    ledtimer ledsec(seconds_clk, sw, led);
+    digits sevenSeg(digit_refclk, seconds_clk, sw[1], an1, an2, an3, an4, seg, an, dp);
     
-    digits sevenSeg(digit_refclk, seconds_clk, an1, an2, an3, an4, seg, an, dp);
+    bcpin bin2pin(digit_refclk, hour, minute, j1, j2, j3);
     
-    bcpin bin2pin(digit_refclk, hour, minute, JA, JB, JC);
+    ledpwm ledpwm(clk, db_btnU, db_btnD, sw[0], j1, j2, j3, led, JA, JB, JC);
 endmodule

@@ -23,6 +23,8 @@
 module counter(
         input bclk,
         input clk,
+        input rev,
+        input sw,
         input rst,
         input btnL,
         input btnR,
@@ -42,30 +44,41 @@ module counter(
     reg last_btnL;
     reg last_btnR;
     
-    always @ (posedge bclk) begin
-        if (btnL && !last_btnL && rst) begin
+    always @ (posedge(bclk)) begin
+        if (btnL && !last_btnL && sw) begin
             last_btnL <= btnL;
             if (uhr == hourLim)
                 uhr <= 8'b0;
-            else
-                uhr <= uhr + 1'b1;  
-        end else if (btnR && !last_btnR && rst) begin
+            else if (uhr == 8'b0 && rev)
+                uhr <= hourLim;
+            else begin
+                if (rev)
+                    uhr <= uhr - 1'b1;
+                else
+                    uhr <= uhr + 1'b1;
+            end  
+        end else if (btnR && !last_btnR && sw) begin
             last_btnR <= btnR;
-             if (umin == hour) begin
-                umin <= 8'b0;
-             end else begin
-                umin <= umin + 1'b1;
-             end    
-        end else if (!btnL && !btnR) begin
+            if (umin == hour)
+               umin <= 8'b0;
+            else if (umin == 8'b0 && rev)
+               umin <= hour;
+            else begin
+               if (rev)
+                   umin <= umin - 1'b1;
+               else
+                   umin <= umin + 1'b1;
+            end  
+        end else if (!btnL && !btnR && sw) begin
             uhr <= hr;
             umin <= min;
+            last_btnL <= btnL;
+            last_btnR <= btnR;
         end
-        last_btnL <= btnL;
-        last_btnR <= btnR;
     end      
        
     always @ (posedge(clk), posedge(rst)) begin       
-        if (rst == 1'b1) begin
+        if (rst == 1'b1 && sw) begin
             sec <= 8'b0;
             hr <= uhr;
             min <= umin;
