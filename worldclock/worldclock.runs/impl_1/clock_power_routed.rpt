@@ -1,8 +1,8 @@
 Copyright 1986-2016 Xilinx, Inc. All Rights Reserved.
 -------------------------------------------------------------------------------------------------------------------------------------
 | Tool Version     : Vivado v.2016.1 (win64) Build 1538259 Fri Apr  8 15:45:27 MDT 2016
-| Date             : Mon May 30 09:18:39 2016
-| Host             : Turtle-PC running 64-bit major release  (build 9200)
+| Date             : Sat May 28 20:38:45 2016
+| Host             : Calvin-PC running 64-bit major release  (build 9200)
 | Command          : report_power -file clock_power_routed.rpt -pb clock_power_summary_routed.pb -rpx clock_power_routed.rpx
 | Design           : clock
 | Device           : xc7a35tcpg236-1
@@ -30,8 +30,8 @@ Table of Contents
 ----------
 
 +--------------------------+-------+
-| Total On-Chip Power (W)  | 0.091 |
-| Dynamic (W)              | 0.019 |
+| Total On-Chip Power (W)  | 0.090 |
+| Dynamic (W)              | 0.018 |
 | Device Static (W)        | 0.072 |
 | Effective TJA (C/W)      | 5.0   |
 | Max Ambient (C)          | 84.5  |
@@ -50,17 +50,17 @@ Table of Contents
 | On-Chip        | Power (W) | Used     | Available | Utilization (%) |
 +----------------+-----------+----------+-----------+-----------------+
 | Clocks         |     0.002 |        3 |       --- |             --- |
-| Slice Logic    |     0.002 |      903 |       --- |             --- |
-|   LUT as Logic |     0.002 |      447 |     20800 |            2.15 |
+| Slice Logic    |     0.002 |      902 |       --- |             --- |
+|   LUT as Logic |     0.001 |      447 |     20800 |            2.15 |
 |   Register     |    <0.001 |      317 |     41600 |            0.76 |
 |   CARRY4       |    <0.001 |       60 |      8150 |            0.74 |
 |   F7/F8 Muxes  |    <0.001 |        1 |     32600 |           <0.01 |
 |   Others       |     0.000 |       21 |       --- |             --- |
 |   BUFG         |     0.000 |        2 |        32 |            6.25 |
-| Signals        |     0.002 |      672 |       --- |             --- |
+| Signals        |     0.001 |      680 |       --- |             --- |
 | I/O            |     0.013 |       61 |       106 |           57.55 |
 | Static Power   |     0.072 |          |           |                 |
-| Total          |     0.091 |          |           |                 |
+| Total          |     0.090 |          |           |                 |
 +----------------+-----------+----------+-----------+-----------------+
 
 
@@ -70,7 +70,7 @@ Table of Contents
 +-----------+-------------+-----------+-------------+------------+
 | Source    | Voltage (V) | Total (A) | Dynamic (A) | Static (A) |
 +-----------+-------------+-----------+-------------+------------+
-| Vccint    |       1.000 |     0.016 |       0.006 |      0.010 |
+| Vccint    |       1.000 |     0.015 |       0.006 |      0.010 |
 | Vccaux    |       1.800 |     0.013 |       0.000 |      0.013 |
 | Vcco33    |       3.300 |     0.005 |       0.004 |      0.001 |
 | Vcco25    |       2.500 |     0.000 |       0.000 |      0.000 |
@@ -139,8 +139,8 @@ Table of Contents
 +---------------+-----------+
 | Name          | Power (W) |
 +---------------+-----------+
-| clock         |     0.019 |
-|   bin2pin     |    <0.001 |
+| clock         |     0.018 |
+|   bin2pin     |     0.000 |
 |   dbbtnD      |    <0.001 |
 |   dbbtnL      |    <0.001 |
 |   dbbtnR      |    <0.001 |
@@ -149,7 +149,7 @@ Table of Contents
 |   refTimer    |    <0.001 |
 |   secTimer    |    <0.001 |
 |   sevenSeg    |    <0.001 |
-|   timeCounter |     0.003 |
+|   timeCounter |     0.002 |
 +---------------+-----------+
 
 

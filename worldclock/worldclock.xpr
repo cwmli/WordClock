@@ -3,19 +3,19 @@
 <!--                                                         -->
 <!-- Copyright 1986-2016 Xilinx, Inc. All Rights Reserved.   -->
 
-<Project Version="7" Minor="12" Path="C:/Users/Turtle/Documents/GitHub/WordClock/worldclock/worldclock.xpr">
+<Project Version="7" Minor="12" Path="C:/Users/Calvin/Documents/GitHub/WordClock/worldclock/worldclock.xpr">
   <DefaultLaunch Dir="$PRUNDIR"/>
   <Configuration>
     <Option Name="Id" Val="d9f945ff293f4c69af15d5690bea207d"/>
     <Option Name="Part" Val="xc7a35tcpg236-1"/>
     <Option Name="CompiledLibDir" Val="$PCACHEDIR/compile_simlib"/>
     <Option Name="CompiledLibDirXSim" Val=""/>
-    <Option Name="CompiledLibDirModelSim" Val="$PPRDIR/../../../../AppData/AppData/AppData/AppData/AppData/AppData/AppData/AppData/AppData/AppData/AppData/AppData/AppData/AppData/AppData/AppData/Roaming/AppData/Turtle/Desktop/Basys3 Projects/worldclock/worldclock.cache/compile_simlib/modelsim"/>
-    <Option Name="CompiledLibDirQuesta" Val="$PPRDIR/../../../../AppData/AppData/AppData/AppData/AppData/AppData/AppData/AppData/AppData/AppData/AppData/AppData/AppData/AppData/AppData/AppData/Roaming/AppData/Turtle/Desktop/Basys3 Projects/worldclock/worldclock.cache/compile_simlib/questa"/>
-    <Option Name="CompiledLibDirIES" Val="$PPRDIR/../../../../AppData/AppData/AppData/AppData/AppData/AppData/AppData/AppData/AppData/AppData/AppData/AppData/AppData/AppData/AppData/AppData/Roaming/AppData/Turtle/Desktop/Basys3 Projects/worldclock/worldclock.cache/compile_simlib/ies"/>
-    <Option Name="CompiledLibDirVCS" Val="$PPRDIR/../../../../AppData/AppData/AppData/AppData/AppData/AppData/AppData/AppData/AppData/AppData/AppData/AppData/AppData/AppData/AppData/AppData/Roaming/AppData/Turtle/Desktop/Basys3 Projects/worldclock/worldclock.cache/compile_simlib/vcs"/>
-    <Option Name="CompiledLibDirRiviera" Val="$PPRDIR/../../../../AppData/AppData/AppData/AppData/AppData/AppData/AppData/AppData/AppData/AppData/AppData/AppData/AppData/AppData/AppData/AppData/Roaming/AppData/Turtle/Desktop/Basys3 Projects/worldclock/worldclock.cache/compile_simlib/riviera"/>
-    <Option Name="CompiledLibDirActivehdl" Val="$PPRDIR/../../../../AppData/AppData/AppData/AppData/AppData/AppData/AppData/AppData/AppData/AppData/AppData/AppData/AppData/AppData/AppData/AppData/Roaming/AppData/Turtle/Desktop/Basys3 Projects/worldclock/worldclock.cache/compile_simlib/activehdl"/>
+    <Option Name="CompiledLibDirModelSim" Val="$PPRDIR/../../../../AppData/AppData/AppData/AppData/AppData/AppData/AppData/AppData/AppData/AppData/AppData/AppData/AppData/AppData/AppData/Roaming/AppData/Turtle/Desktop/Basys3 Projects/worldclock/worldclock.cache/compile_simlib/modelsim"/>
+    <Option Name="CompiledLibDirQuesta" Val="$PPRDIR/../../../../AppData/AppData/AppData/AppData/AppData/AppData/AppData/AppData/AppData/AppData/AppData/AppData/AppData/AppData/AppData/Roaming/AppData/Turtle/Desktop/Basys3 Projects/worldclock/worldclock.cache/compile_simlib/questa"/>
+    <Option Name="CompiledLibDirIES" Val="$PPRDIR/../../../../AppData/AppData/AppData/AppData/AppData/AppData/AppData/AppData/AppData/AppData/AppData/AppData/AppData/AppData/AppData/Roaming/AppData/Turtle/Desktop/Basys3 Projects/worldclock/worldclock.cache/compile_simlib/ies"/>
+    <Option Name="CompiledLibDirVCS" Val="$PPRDIR/../../../../AppData/AppData/AppData/AppData/AppData/AppData/AppData/AppData/AppData/AppData/AppData/AppData/AppData/AppData/AppData/Roaming/AppData/Turtle/Desktop/Basys3 Projects/worldclock/worldclock.cache/compile_simlib/vcs"/>
+    <Option Name="CompiledLibDirRiviera" Val="$PPRDIR/../../../../AppData/AppData/AppData/AppData/AppData/AppData/AppData/AppData/AppData/AppData/AppData/AppData/AppData/AppData/AppData/Roaming/AppData/Turtle/Desktop/Basys3 Projects/worldclock/worldclock.cache/compile_simlib/riviera"/>
+    <Option Name="CompiledLibDirActivehdl" Val="$PPRDIR/../../../../AppData/AppData/AppData/AppData/AppData/AppData/AppData/AppData/AppData/AppData/AppData/AppData/AppData/AppData/AppData/Roaming/AppData/Turtle/Desktop/Basys3 Projects/worldclock/worldclock.cache/compile_simlib/activehdl"/>
     <Option Name="BoardPart" Val=""/>
     <Option Name="ActiveSimSet" Val="sim_1"/>
     <Option Name="DefaultLib" Val="xil_defaultlib"/>
