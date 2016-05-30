@@ -1,8 +1,8 @@
 Copyright 1986-2016 Xilinx, Inc. All Rights Reserved.
 ------------------------------------------------------------------------------------
 | Tool Version : Vivado v.2016.1 (win64) Build 1538259 Fri Apr  8 15:45:27 MDT 2016
-| Date         : Sat May 28 20:38:09 2016
-| Host         : Calvin-PC running 64-bit major release  (build 9200)
+| Date         : Mon May 30 09:17:39 2016
+| Host         : Turtle-PC running 64-bit major release  (build 9200)
 | Command      : report_control_sets -verbose -file clock_control_sets_placed.rpt
 | Design       : clock
 | Device       : xc7a35t
@@ -33,10 +33,10 @@ Table of Contents
 +--------------+-----------------------+------------------------+-----------------+--------------+
 | Clock Enable | Synchronous Set/Reset | Asynchronous Set/Reset | Total Registers | Total Slices |
 +--------------+-----------------------+------------------------+-----------------+--------------+
-| No           | No                    | No                     |              92 |           29 |
-| No           | No                    | Yes                    |              49 |           32 |
-| No           | Yes                   | No                     |             120 |           48 |
-| Yes          | No                    | No                     |              36 |           17 |
+| No           | No                    | No                     |              90 |           30 |
+| No           | No                    | Yes                    |              49 |           29 |
+| No           | Yes                   | No                     |             122 |           48 |
+| Yes          | No                    | No                     |              36 |           18 |
 | Yes          | No                    | Yes                    |              16 |           16 |
 | Yes          | Yes                   | No                     |               4 |            1 |
 +--------------+-----------------------+------------------------+-----------------+--------------+
@@ -98,21 +98,21 @@ Table of Contents
 |  seconds_clk_BUFG                   | timeCounter/hr[7]_P_i_1_n_0  | timeCounter/hr_reg[7]_LDC_i_1_n_0  |                1 |              1 |
 |  seconds_clk_BUFG                   | timeCounter/hr[7]_P_i_1_n_0  | timeCounter/hr_reg[0]_LDC_i_1_n_0  |                1 |              1 |
 |  clk_IBUF_BUFG                      | ledpwm/cwidth[3]_i_1_n_0     |                                    |                1 |              4 |
-|  digit_refclk_BUFG                  |                              | timeCounter/JC_reg[3]_3            |                2 |              4 |
 |  digit_refclk_BUFG                  | sevenSeg/anm[3]_i_2_n_0      | sevenSeg/anm[3]_i_1_n_0            |                1 |              4 |
-|  digit_refclk_BUFG                  | sw_IBUF[1]                   |                                    |                1 |              4 |
+|  digit_refclk_BUFG                  | sw_IBUF[1]                   |                                    |                2 |              4 |
 |  clk_IBUF_BUFG                      | ledpwm/count[31]_i_1_n_0     |                                    |                1 |              4 |
-|  digit_refclk_BUFG                  | sevenSeg/segm[6]_i_1_n_0     |                                    |                4 |              7 |
-|  clk_IBUF_BUFG                      | timeCounter/umin[7]_i_1_n_0  |                                    |                6 |              8 |
-|  clk_IBUF_BUFG                      | dbbtnR/E[0]                  |                                    |                3 |              8 |
+|  digit_refclk_BUFG                  |                              | timeCounter/JC_reg[3]_3            |                2 |              6 |
+|  digit_refclk_BUFG                  | sevenSeg/segm[6]_i_1_n_0     |                                    |                5 |              7 |
+|  clk_IBUF_BUFG                      | timeCounter/umin[7]_i_1_n_0  |                                    |                4 |              8 |
+|  clk_IBUF_BUFG                      | dbbtnR/E[0]                  |                                    |                4 |              8 |
 |  seconds_clk_BUFG                   |                              | timeCounter/sec0                   |                3 |              8 |
 |  clk_IBUF_BUFG                      |                              | ledpwm/p_0_in                      |                3 |             10 |
-|  digit_refclk_BUFG                  |                              |                                    |                7 |             16 |
+|  digit_refclk_BUFG                  |                              |                                    |                7 |             14 |
 |  clk_IBUF_BUFG                      |                              | ledpwm/JA[7]_i_1_n_0               |                8 |             20 |
 |  clk_IBUF_BUFG                      |                              | ledpwm/count[31]_i_1_n_0           |                8 |             31 |
 |  clk_IBUF_BUFG                      |                              | refTimer/freq                      |                8 |             31 |
-|  clk_IBUF_BUFG                      |                              | sw_IBUF[2]                         |               16 |             33 |
-|  clk_IBUF_BUFG                      |                              |                                    |               22 |             76 |
+|  clk_IBUF_BUFG                      |                              | sw_IBUF[2]                         |               13 |             33 |
+|  clk_IBUF_BUFG                      |                              |                                    |               23 |             76 |
 +-------------------------------------+------------------------------+------------------------------------+------------------+----------------+
 
 

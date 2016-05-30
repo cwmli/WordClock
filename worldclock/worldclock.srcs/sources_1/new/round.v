@@ -70,11 +70,13 @@ module bcpin(
             ones[0] = minute[i];
         end
         //6789 & 1234
-        if(ones == 5 || ones == 0)
+        if(ones == 9 || ones == 8)
+            rnd_min = 0;
+        else if(ones == 5 || ones == 0)
             rnd_min = rnd_min;
-        else if(ones == 4 || ones == 9)
+        else if(ones == 4)
             rnd_min = rnd_min + 1;
-        else if(ones == 3 || ones == 8)
+        else if(ones == 3)
             rnd_min = rnd_min + 2;
         else if(ones == 2 || ones == 7)
             rnd_min = rnd_min - 2;
