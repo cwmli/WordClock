@@ -90,7 +90,7 @@ module bcpin(
         JA[0] <= 1;
         
         //check whether past or to
-        if(rnd_min == 0) begin
+        if(rnd_min == 0 || rnd_min == 60) begin
             JA[7] <= 0;
             JA[6] <= 0;
         end else if(rnd_min <= 30) begin

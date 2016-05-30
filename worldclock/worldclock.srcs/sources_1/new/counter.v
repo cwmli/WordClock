@@ -47,7 +47,7 @@ module counter(
     always @ (posedge(bclk)) begin
         if (btnL && !last_btnL && sw) begin
             last_btnL <= btnL;
-            if (uhr == hourLim)
+            if (uhr == hourLim && !rev)
                 uhr <= 8'b0;
             else if (uhr == 8'b0 && rev)
                 uhr <= hourLim;
@@ -59,7 +59,7 @@ module counter(
             end  
         end else if (btnR && !last_btnR && sw) begin
             last_btnR <= btnR;
-            if (umin == hour)
+            if (umin == hour && !rev)
                umin <= 8'b0;
             else if (umin == 8'b0 && rev)
                umin <= hour;
